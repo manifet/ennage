@@ -1,0 +1,1 @@
+import "STYLES_DIR/main.scss";
