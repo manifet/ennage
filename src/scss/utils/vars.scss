@@ -1,0 +1,18 @@
+/* Vars:
+  ========================================================================== */
+
+// Font
+$mainFont: "Montserrat", Helvetica, Arial, sans-serif;
+
+// Size
+$mainFontColor: #101010;
+$mainFontSize: 16px;
+$mainFontWeight: 400;
+$mainLineHeight: 32px;
+
+$desktopWidth: 1216px * 100/95; // (layout container)*100/(container width)=(page with padding for adaptive)
+$smDesktopWidth: 1024px;
+$tableWidth: 768px;
+$smTableWidth: 640px;
+$phoneWidth: 480px;
+$smPhoneWidth: 320px;

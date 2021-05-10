@@ -16,7 +16,8 @@ const PAGES = fs
 const ENTRY_POINTS_DIR = `${PATHS.src}/entry_points/`;
 const ENTRY_POINTS = {
   main: `${ENTRY_POINTS_DIR}main.js`,
-  index: `${ENTRY_POINTS_DIR}index.js`
+  index: `${ENTRY_POINTS_DIR}index.js`,
+  team: `${ENTRY_POINTS_DIR}team.js`
 };
 module.exports = {
   externals: {
@@ -28,8 +29,9 @@ module.exports = {
     path: PATHS.dist,
     publicPath: "/"
   },
+
   optimization: {
-    minimize: false,
+    minimize: false
     // splitChunks: {
     //   cacheGroups: {
     //     vendor: {
@@ -56,10 +58,11 @@ module.exports = {
         }
       },
       {
-        test: /\.(woff(2)?|ttg|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         loader: "file-loader",
         options: {
-          name: `[name].[ext]`
+          name: "[name].[ext]",
+          outputPath: `${PATHS.assets}fonts/`
         }
       },
       {
@@ -119,8 +122,9 @@ module.exports = {
       page =>
         new HtmlWebpackPlugin({
           minify: false,
-          template: `${PAGES_DIR}/${page}`, // .pug
-          filename: `./${page.replace(/\.pug/, ".html")}` // .html
+          template: `${PAGES_DIR}${page}`, // .pug
+          filename: `./${page.replace(/\.pug/, ".html")}`, // .html
+          inject: false
         })
     ),
     new CopyWebpackPlugin({

@@ -1,22 +1,14 @@
-@import '../utils/libs';
-@import '../utils/mixins';
-@import '../utils/fonts';
-@import '../utils/reset';
+@import "../utils/libs";
+@import "../utils/mixins";
+@import "../utils/vars";
+@import "../utils/fonts";
+@import "../utils/reset";
 
 html {
   line-height: $mainLineHeight;
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
-  @media screen and (max-width: $desktopWidth) {
-    font-size: 16px;
-  }
-  @media screen and (max-width: $tableWidth) {
-    font-size: 15px;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    font-size: 14px;
-  }
 }
 
 body {
@@ -54,7 +46,15 @@ li {
   padding: 0;
   list-style-type: none;
 }
-
+:root {
+  --royalBlue: #4f68ec;
+  --graniteGray: #2c2f43;
+  --graniteGray75: #616372;
+  --graniteGray65: #767885;
+  --graniteGray35: #b5b6bd;
+  --graniteGray05: #f4f5f6;
+  --graniteGray10: #eaeaec;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -62,18 +62,12 @@ li {
   min-height: 100vh;
   min-width: 100vh;
 }
-
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 .container {
-  width: 100%;
+  width: 95%;
   flex: 0 0 auto;
   position: relative;
   margin: 0 auto;
+  margin-bottom: 10rem;
   max-width: $desktopWidth;
   @media screen and (max-width: $smDesktopWidth) {
     max-width: $tableWidth;
@@ -85,6 +79,29 @@ li {
     max-width: $smPhoneWidth;
   }
 }
-
-// Modules:
-// example: @import "modules/my-module.scss";
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+  &--blue {
+    background: var(--royalBlue);
+    color: white;
+    padding: 0.5rem 2.5rem;
+  }
+}
+@import "../imports/header";
+@import "../imports/page-head.scss";
+@import "../imports/section-head.scss";
+@import "../imports/footer";

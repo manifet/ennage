@@ -1,0 +1,18 @@
+.page-head {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 12rem;
+  }
+  &__text {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: var(--graniteGray65);
+    max-width: rem(590px);
+    margin-left: 2rem;
+  }
+}

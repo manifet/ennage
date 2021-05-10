@@ -1,0 +1,55 @@
+@import "../utils/vars.scss";
+@import "../utils/mixins.scss";
+
+.team {
+  background: var(--graniteGray05);
+  &__container {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -2rem;
+  }
+  &__item {
+    max-width: rem(384px);
+    height: rem(384px);
+    flex: 0 0 auto;
+    padding: 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    margin: 0 2rem 2rem;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    &-wrap {
+      width: 100%;
+      height: rem(256px);
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__name {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: var(--graniteGray);
+    margin-bottom: 0.5rem;
+  }
+  &__profession {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 2rem;
+    color: var(--graniteGray65);
+  }
+}

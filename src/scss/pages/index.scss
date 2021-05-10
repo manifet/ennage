@@ -1,3 +1,37 @@
-a {
-  height: 0;
+@import "../utils/vars.scss";
+@import "../utils/mixins.scss";
+@import "../imports/projects.scss";
+@import "../imports/articles.scss";
+
+.about {
+  & .section-head {
+    margin-bottom: 2rem;
+  }
+  &__container {
+    margin-bottom: rem(128px);
+  }
+  &__text {
+    max-width: rem(594px);
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: var(--graniteGray);
+    opacity: 0.65;
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    &-wrap {
+      width: 100%;
+      height: rem(377px);
+    }
+  }
 }

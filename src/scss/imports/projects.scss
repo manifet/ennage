@@ -1,0 +1,47 @@
+.projects {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    margin-bottom: 2rem;
+    max-width: rem(384px);
+    flex: 0 0 auto;
+    background: var(--graniteGray);
+    height: rem(377px);
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      padding: 2.5rem;
+    }
+    &-type {
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      text-transform: uppercase;
+      color: white;
+      opacity: 0.35;
+    }
+  }
+  &__title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: white;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    &-wrap {
+      width: 100%;
+      height: rem(235px);
+    }
+  }
+}

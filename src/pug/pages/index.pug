@@ -5,7 +5,74 @@ html(lang="en")
         meta(charset="utf-8")
         meta(name="viewport" content="width=1240")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
-        link(href="./css/main.css" type="text/css" rel="stylesheet")
-        link(href="./css/index.css" type="text/css" rel="stylesheet")
+        link(href="./assets/css/main.css" type="text/css" rel="stylesheet")
+        link(href="./assets/css/index.css" type="text/css" rel="stylesheet")
     body
         div(class="wrapper")
+            include ../includes/header.pug
+            section(class="page-head")
+                div(class="page-head__container container")
+                    div(class="page-head__wrap")
+                        div(class="section-head")
+                            div(class="section-head__wrap")
+                                div(class="section-head__heading") ennage 	&#128293;
+                                div(class="section-head__subheading") больше чем команда
+                        div(class="page-head__text") Если вы здесь, то наверняка знаете, что мы делаем. А делаем мы крутые проекты и рассказываем о них. Все самое интересное находится прямо на следующем экране и, конечно же, в нашем блоге.
+                            p() Рады приветствовать! Добро пожаловать в гости к ENNAGE!
+            div(class="projects")
+                div(class="projects__container container")
+                    ul(class="projects__list")
+                        li(class="projects__item")
+                            div(class="projects__item-wrap")
+                                span(class="projects__title") SUPREM SAUSAGE
+                                span(class="projects__item-type") mobile App
+                            div(class="projects__img-wrap")
+                                img(class="projects__img" src="./assets/images/projects/suprem_sausage.png")
+                        li(class="projects__item")
+                            div(class="projects__item-wrap")
+                                span(class="projects__title") safe running
+                                span(class="projects__item-type") mobile App
+                            div(class="projects__img-wrap")
+                                img(class="projects__img" src="./assets/images/projects/safe_running.png")
+                        li(class="projects__item")
+                            div(class="projects__item-wrap")
+                                span(class="projects__title") DIZAIN SANTEHNIKA
+                                span(class="projects__item-type") web-site
+                            div(class="projects__img-wrap")
+                                img(class="projects__img" src="./assets/images/projects/dizain_santehnika.png")
+            section(class="articles")
+                div(class="articles__container container")
+                    div(class="section-head")
+                        div(class="section-head__wrap")
+                            div(class="section-head__heading") из жизни &#127795;
+                            div(class="section-head__subheading") новости команды
+                    ul(class="articles__list")
+                        li(class="articles__item")
+                            div(class="articles__item-wrap")
+                                div(class="articles__img-wrap")
+                                    img(class="articles__img" src="./assets/images/articles/article_1.jpg")
+                                div(class="articles__title") Как мы работаем
+                                div(class="articles__text") Если вы здесь, то наверняка знаете, что мы делаем. А делаем мы крутые проекты и рассказываем о них.  И в этой статье мы расскажем как мы работаем, какие проекты нас инетресуют, как вообще сложилась наша команда и какие у нас ценности.
+                            a(class="articles__ref") Читать статью
+                        li(class="articles__item")
+                            div(class="articles__item-wrap")
+                                div(class="articles__img-wrap")
+                                    img(class="articles__img" src="./assets/images/articles/article_2.jpg")
+                                div(class="articles__title") Бег начинается с...
+                                div(class="articles__text") Иронично, что человек на фотографии с превью бежит неправильно... Ну или он только начал свой забег?  Давайте разбираться вместе с Safe Running! Расскажем как появилась идея приложения, как мы подошли к исследованиям и как движется разработка.
+                            a(class="articles__ref") Читать статью
+            section(class="about")
+                div(class="about__container container")
+                    div(class="section-head")
+                        div(class="section-head__wrap")
+                            div(class="section-head__heading") из жизни &#128524;
+                            div(class="section-head__subheading") новости команды
+                        a(class="section-head__ref-btn") О команде
+                            svg(class="section-head__ref-icon" width="33" height="13" viewBox="0 0 33 13")
+                                use(xlink:href="./assets/images/sprites.svg#arrow-right")
+                    div(class="about__text-wrap")
+                        div(class="about__text") Привет! Мы — команде ENNAGE и мы любим digital. Вся наша любовь к проектам началась еще 31 мая 2017 года, когда два студента — дизайнер и разработчик, решили, что вместе будет веселее. Теперь у нас команда состоит из 8 человек и каждый из них принимает участие в каждом проекте в той или иной степени.
+                        div(class="about__text") С самого начала нам хотелось изменить мир к лучшему и неважно как. Пусть это будет небольшой продукт, который поможет какому-то небольшому кругу людей, но, как известно,  большой путь начинается с маленького шага.
+                    div(class="about__img-wrap")
+                        img(class="about__img" src="./assets/images/about/about.jpg")
+            include ../includes/footer.pug
