@@ -199,6 +199,10 @@
   margin-bottom: 3rem;
 }
 
+.section-ref .articles__item {
+  background: white;
+}
+
 .footer {
   background: var(--graniteGray);
 }
@@ -391,6 +395,10 @@
   color: var(--graniteGray65);
 }
 
+.post__text-par:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
 .post__annexes {
   margin-top: 7rem;
   display: -webkit-box;
@@ -453,6 +461,24 @@
 
 .post__btn-icon {
   fill: white;
+}
+
+.post__postscript {
+  background: var(--royalBlue05);
+  border-radius: 0.5rem;
+  padding: 1.5rem 6rem;
+  margin-bottom: 7rem;
+}
+
+.post__postscript-text {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+  color: var(--royalBlue);
+  max-width: 25.0625rem;
 }
 
 .projects__list {

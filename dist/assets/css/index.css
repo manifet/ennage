@@ -443,6 +443,11 @@
   color: var(--royalBlue);
 }
 
+.disable .articles__ref {
+  pointer-events: none;
+  color: var(--graniteGray35);
+}
+
 .about .section-head {
   margin-bottom: 2rem;
 }

@@ -321,23 +321,7 @@
 .projects-page__emoji {
   width: 5rem;
   height: 5rem;
-  border-radius: 50%;
-  border: 0.125rem solid var(--graniteGray10);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-right: 2.5rem;
-  font-size: 3rem;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 4rem;
 }
 
 .projects-page__wrap {
