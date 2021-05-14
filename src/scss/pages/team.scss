@@ -1,6 +1,11 @@
 @import "../utils/vars.scss";
 @import "../utils/mixins.scss";
 
+@import "../imports/header";
+@import "../imports/page-head.scss";
+@import "../imports/section-head.scss";
+@import "../imports/footer";
+
 .team {
   background: var(--graniteGray05);
   &__container {
@@ -48,7 +53,7 @@
     font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 2rem;
     color: var(--graniteGray65);
   }

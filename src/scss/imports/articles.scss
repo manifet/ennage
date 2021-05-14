@@ -17,10 +17,15 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    &-wrap{
+    margin-bottom: 2rem;
+    &-wrap {
       display: flex;
       flex-direction: column;
     }
+  }
+  &__img-text {
+    width: 100%;
+    height: rem(168px);
   }
   &__img {
     width: 100%;
@@ -58,5 +63,9 @@
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: var(--royalBlue);
+    .disable & {
+      pointer-events: none;
+      color: var(--graniteGray35);
+    }
   }
 }

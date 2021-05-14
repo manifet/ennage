@@ -1,0 +1,70 @@
+doctype html
+html(lang="en")
+    head
+        title Article
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        link(href="./assets/css/main.css" type="text/css" rel="stylesheet")
+        link(href="./assets/css/article.css" type="text/css" rel="stylesheet")
+    body
+        include ../includes/preloader.pug
+        div(class="wrapper")
+            include ../includes/header.pug
+            section(class="page-head")
+                div(class="page-head__container container")
+                    a(href="./blog.html" class="page-head__back btn__ref")
+                        svg(class="page-head__back-arrow" width="33" height="13" viewBox="0 0 33 13")
+                            use(xlink:href="./assets/images/sprites.svg#arrow-left")
+                        span() Ко всем статьям
+                    div(class="page-head__wrap")
+                        div(class="section-head")
+                            div(class="section-head__wrap")
+                                div(class="section-head__heading") Бег начинается с...
+                                div(class="section-head__subheading") постойте, с чего?
+                        div(class="page-head__text") С чего начинается бег все примерно представляют, но правильно ли? А в этой статье мы расскажем еще и о том, с чего начинается разработка подобного приложения.
+            section(class="post")
+                div(class="post__container container")
+                    ul(class="post__list")
+                        li(class="post__item")
+                            div(class="post__img-wrap")
+                                img(class="post__img" src="./assets/images/content/run.jpg")
+                            div(class="post__postscript") 
+                                div(class="post__postscript-text") Иронично, что человек на фотографии с превью бежит неправильно... Ну или он только начал свой забег?  Давайте разбираться вместе с Safe Running!
+                            div(class="post__inner")
+                                div(class="post__wrap")
+                                    div(class="post__heading") Как все начиналось &#129299;
+                                    div(class="post__text") Некоторое время назад нам пришла идея сделать приложение для бега, которое кроме трекинга данных и мотивационных ачивок, избавляла, максимально насколько это возможно, бегунов-любителей от проблем связанных с неправильной техникой бега. 
+                                div(class="post__wrap")
+                                    div(class="post__heading") интересные цифры  &#128290;
+                                    div(class="post__text") 
+                                        p(class="post__text-par") Как мы знаем из опыта коллег по цеху, распыляться на большую аудиторию — дело гиблое, потому мы решили не накручивать много фич и сконцентрироваться на одной главной — обучении бегу. Мы придумали систему, которая выступает в роли некого тренера, которому ты рассказываешь о своей цели, немного о себе, и получаешь четкий план тренировок. 
+                                        p(class="post__text-par") Однако, просто тренировок было недостаточно, ведь какие могут быть тренировки, когда нет техники? И мы рашили узнать аудиторию бегунов получше.
+                                        p(class="post__text-par") Первое что мы сделали — собрали опросник. Нам нужно было понять, пользуются ли бегуны приложениями (если да, то какими именно), есть ли у них тренера и так далее.
+                        li(class="post__item")
+                            div(class="post__img-wrap")
+                                img(class="post__img" src="./assets/images/content/diagram.jpg")
+                            div(class="post__inner")
+                                div(class="post__wrap")
+                                    div(class="post__heading") Продолжение следует... &#128293;
+                                    div(class="post__text") Мы потихоньку пишем эту статью, не теряйте нас!
+            section(class="articles section-ref")
+                div(class="articles__container section-ref__container container")
+                    div(class="section-ref__title") Другие проекты
+                    ul(class="articles__list")
+                        li(class="articles__item")
+                            div(class="articles__item-wrap")
+                                div(class="articles__img-wrap")
+                                    img(class="articles__img" src="./assets/images/articles/article_1.jpg")
+                                span(class="articles__title") Как мы работаем
+                                div(class="articles__text") Если вы здесь, то наверняка знаете, что мы делаем. А делаем мы крутые проекты и рассказываем о них.  И в этой статье мы расскажем как мы работаем, какие проекты нас инетресуют, как вообще сложилась наша команда и какие у нас ценности.
+                            a(class="articles__ref") Читать статью
+                        li(class="articles__item disable")
+                            div(class="articles__item-wrap")
+                                div(class="articles__img-wrap")
+                                    img(class="articles__img" src="./assets/images/content/unknown_article.jpg")
+                                div(class="articles__img-text")
+                                    img(class="articles__img" src="./assets/images/content/unknown_text.png")
+                            a(class="articles__ref") Читать статью
+            include ../includes/footer.pug            
+        script(src="./assets/js/index.js" type="text/javascript")

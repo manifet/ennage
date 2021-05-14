@@ -5,9 +5,7 @@
 @import "../utils/reset";
 
 html {
-  line-height: $mainLineHeight;
   font-size: $mainFontSize;
-  color: $mainFontColor;
   height: 100%;
 }
 
@@ -46,8 +44,12 @@ li {
   padding: 0;
   list-style-type: none;
 }
+
+// colors
 :root {
   --royalBlue: #4f68ec;
+  --royalBlue10: #edf0fd;
+  --royalBlue05: #f6f7fe;
   --graniteGray: #2c2f43;
   --graniteGray75: #616372;
   --graniteGray65: #767885;
@@ -55,12 +57,14 @@ li {
   --graniteGray05: #f4f5f6;
   --graniteGray10: #eaeaec;
 }
+
+// styles of main elements
 .wrapper {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: 0 auto;
   min-height: 100vh;
-  min-width: 100vh;
+  min-width: 100vw;
 }
 .container {
   width: 95%;
@@ -69,15 +73,6 @@ li {
   margin: 0 auto;
   margin-bottom: 10rem;
   max-width: $desktopWidth;
-  @media screen and (max-width: $smDesktopWidth) {
-    max-width: $tableWidth;
-  }
-  @media screen and (max-width: $tableWidth) {
-    max-width: $phoneWidth;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    max-width: $smPhoneWidth;
-  }
 }
 .logo {
   display: flex;
@@ -95,13 +90,25 @@ li {
   align-items: center;
   border-radius: 0.25rem;
   white-space: nowrap;
+  width: fit-content;
   &--blue {
     background: var(--royalBlue);
     color: white;
     padding: 0.5rem 2.5rem;
   }
+  &__ref {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    border-radius: rem(100px);
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
 }
-@import "../imports/header";
-@import "../imports/page-head.scss";
-@import "../imports/section-head.scss";
-@import "../imports/footer";
+
+@import "../imports/preloader.scss";

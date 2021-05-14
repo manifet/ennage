@@ -17,7 +17,14 @@ const ENTRY_POINTS_DIR = `${PATHS.src}/entry_points/`;
 const ENTRY_POINTS = {
   main: `${ENTRY_POINTS_DIR}main.js`,
   index: `${ENTRY_POINTS_DIR}index.js`,
-  team: `${ENTRY_POINTS_DIR}team.js`
+  team: `${ENTRY_POINTS_DIR}team.js`,
+  projects: `${ENTRY_POINTS_DIR}projects.js`,
+  blog: `${ENTRY_POINTS_DIR}blog.js`,
+  404: `${ENTRY_POINTS_DIR}404.js`,
+  article: `${ENTRY_POINTS_DIR}article.js`,
+  supreme_sausage: `${ENTRY_POINTS_DIR}supreme_sausage.js`,
+  contacts: `${ENTRY_POINTS_DIR}contacts.js`,
+  law_info: `${ENTRY_POINTS_DIR}law_info.js`
 };
 module.exports = {
   externals: {
@@ -111,7 +118,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      STYLES_DIR: "../scss/pages"
+      STYLES_DIR: "../scss/pages",
+      SCRIPTS_DIR:"../js/pages"
     }
   },
   plugins: [

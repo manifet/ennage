@@ -1,0 +1,71 @@
+@import "../utils/vars.scss";
+@import "../utils/mixins.scss";
+
+.notfound {
+  flex: 1 1 auto;
+  padding: rem(55.8px) 0 rem(72px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  &__up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  &__text {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--graniteGray);
+  }
+  &__down {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &-text {
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      text-align: center;
+      color: var(--graniteGray);
+      max-width: rem(318px);
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    &-list {
+      display: flex;
+      align-items: center;
+    }
+    &-item {
+      border-radius: 0.25rem;
+      background: var(--royalBlue10);
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+    &-link {
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      color: var(--royalBlue);
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

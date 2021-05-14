@@ -1,0 +1,25 @@
+@import "../utils/vars.scss";
+@import "../utils/mixins.scss";
+
+@import "../imports/header";
+@import "../imports/page-head.scss";
+@import "../imports/section-head.scss";
+@import "../imports/footer";
+
+.law-info {
+  width: 100%;
+  &__container {
+    margin-bottom: 4rem;
+    padding: 1rem;
+    background: var(--graniteGray05);
+  }
+  &__link {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-decoration-line: underline;
+    color: var(--royalBlue);
+  }
+}

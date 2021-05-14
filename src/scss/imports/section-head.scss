@@ -5,6 +5,7 @@
   &__wrap {
     display: flex;
     flex-direction: column;
+    max-width: rem(594px);
   }
   &__heading {
     font-family: "Oswald";
@@ -27,17 +28,8 @@
   &__ref-btn {
     background: white;
     border: 0.125rem solid var(--graniteGray10);
-    box-sizing: border-box;
-    border-radius: rem(100px);
     padding: 1rem 1.5rem;
-    font-family: "Oswald";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 0.875rem;
-    line-height: 1.5rem;
     color: var(--royalBlue);
-    display: flex;
-    align-items: center;
   }
   &__ref-icon {
     margin-left: 0.75rem;

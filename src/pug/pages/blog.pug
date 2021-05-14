@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+    head
+        title Blog
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0" disable)
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        link(href="./assets/css/main.css" type="text/css" rel="stylesheet")
+        link(href="./assets/css/blog.css" type="text/css" rel="stylesheet")
+    body
+        include ../includes/preloader.pug
+        div(class="wrapper")
+            include ../includes/header.pug
+            section(class="page-head")
+                div(class="page-head__container container")
+                    div(class="page-head__wrap")
+                        div(class="section-head")
+                            div(class="section-head__wrap")
+                                div(class="section-head__heading") БЛОГ &#127764;
+                                div(class="section-head__subheading") обо всем сразу
+                        div(class="page-head__text") Рассказываем обо всем, что происходит в команде: рассказываем про то, как продвигается проект, чем занимаемся в свободное время и всякие такие интересные новости.
+            section(class="articles")
+                div(class="articles__container container")
+                    ul(class="articles__list")
+                        li(class="articles__item")
+                            div(class="articles__item-wrap")
+                                div(class="articles__img-wrap")
+                                    img(class="articles__img" src="./assets/images/articles/article_1.jpg")
+                                span(class="articles__title") Как мы работаем
+                                div(class="articles__text") Если вы здесь, то наверняка знаете, что мы делаем. А делаем мы крутые проекты и рассказываем о них.  И в этой статье мы расскажем как мы работаем, какие проекты нас инетресуют, как вообще сложилась наша команда и какие у нас ценности.
+                            a(class="articles__ref") Читать статью
+                        li(class="articles__item")
+                            div(class="articles__item-wrap")
+                                div(class="articles__img-wrap")
+                                    img(class="articles__img" src="./assets/images/articles/article_2.jpg")
+                                span(class="articles__title") Бег начинается с...
+                                div(class="articles__text") Иронично, что человек на фотографии с превью бежит неправильно... Ну или он только начал свой забег?  Давайте разбираться вместе с Safe Running! Расскажем как появилась идея приложения, как мы подошли к исследованиям и как движется разработка.
+                            a(class="articles__ref") Читать статью
+                        li(class="articles__item disable")
+                            div(class="articles__item-wrap")
+                                div(class="articles__img-wrap")
+                                    img(class="articles__img" src="./assets/images/content/unknown_article.jpg")
+                                div(class="articles__img-text")
+                                    img(class="articles__img" src="./assets/images/content/unknown_text.png")
+                            a(class="articles__ref") Читать статью
+                        li(class="articles__item disable")
+                            div(class="articles__item-wrap")
+                                div(class="articles__img-wrap")
+                                    img(class="articles__img" src="./assets/images/content/unknown_article.jpg")
+                                div(class="articles__img-text")
+                                    img(class="articles__img" src="./assets/images/content/unknown_text.png")
+                            a(class="articles__ref") Читать статью
+            include ../includes/footer.pug
+        script(src="./assets/js/index.js" type="text/javascript")

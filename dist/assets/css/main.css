@@ -396,10 +396,6 @@ th {
   padding: 0;
 }
 
-/* Mixins:
-  ========================================================================== */
-/* Vars:
-  ========================================================================== */
 @font-face {
   font-family: "Oswald";
   src: url(/assets/fonts/oswalddemibold.ttf);
@@ -408,9 +404,23 @@ th {
 }
 
 @font-face {
+  font-family: "Oswald";
+  src: url(/assets/fonts/oswaldregular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Source Sans Pro";
   src: url(/assets/fonts/sourcesanspro.ttf);
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(/assets/fonts/sourcesansprosemibold.ttf);
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -608,16 +618,14 @@ th {
 }
 
 html {
-  line-height: 32px;
   font-size: 16px;
-  color: #101010;
   height: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -651,6 +659,16 @@ li {
   list-style-type: none;
 }
 
+:root {
+  --royalBlue: #4f68ec;
+  --graniteGray: #2c2f43;
+  --graniteGray75: #616372;
+  --graniteGray65: #767885;
+  --graniteGray35: #b5b6bd;
+  --graniteGray05: #f4f5f6;
+  --graniteGray10: #eaeaec;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -671,24 +689,67 @@ li {
           flex: 0 0 auto;
   position: relative;
   margin: 0 auto;
-  max-width: 1440px;
+  margin-bottom: 10rem;
+  max-width: 1280px;
 }
 
-@media screen and (max-width: 1024px) {
-  .container {
-    max-width: 768px;
-  }
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 480px;
-  }
+.btn {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-@media screen and (max-width: 480px) {
-  .container {
-    max-width: 320px;
-  }
+.btn--blue {
+  background: var(--royalBlue);
+  color: white;
+  padding: 0.5rem 2.5rem;
+}
+
+.btn__ref {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  border-radius: 6.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: nowrap;
+  text-transform: uppercase;
 }
 
