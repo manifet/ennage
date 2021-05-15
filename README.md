@@ -12,26 +12,26 @@ build config for production mode
     npm run dev/build
 # Images
 ### Png sprites
-!(https://github.com/manifetko/ennage/raw/master/src/images/png_src/css/Screenshot_1.png "CSS of png sprites")
-!(https://github.com/manifetko/ennage/raw/master/src/images/png_src/css/Screenshot_2.png "CSS of png sprites")
+![CSS of png sprites](https://github.com/manifetko/ennage/raw/master/src/images/png_src/css/Screenshot_1.png)  <br/>
+![CSS of png sprites](https://github.com/manifetko/ennage/raw/master/src/images/png_src/css/Screenshot_2.png)  <br/> 
 all sourсe images in ./src/images/png_src/*.png
 # Pug
 ### Frequently used blocks
-./src/pug/includes
+./src/pug/includes  <br/> 
 frequently used blocks code for the main pages
 ### Pages
-./src/pug/pages
+./src/pug/pages  <br/> 
 сode for each page
 # Styles
 ### Frequently used blocks
-./src/scss/imports
+./src/scss/imports  <br/> 
 frequently used block styles without utils for the main page styles
 ### Page styles
-./src/scss/pages
-there can be both code for a separate page, for frequently used blocks from ./src/scss/imports and also main.scss for all pages.
+./src/scss/pages  <br/> 
+there can be both code for a separate page, for frequently used blocks from ./src/scss/imports and also main.scss for all pages.  <br/> 
 need to import vars.scss and mixing.scss
 ### Utils
-./src/scss/utils
+./src/scss/utils  <br/> 
 separation from the main code of fonts and libraries, as well as useful tools for writing code
 
     
