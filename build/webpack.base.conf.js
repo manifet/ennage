@@ -9,10 +9,13 @@ const PATHS = {
   dist: path.join(__dirname, "../dist"),
   assets: "assets/"
 };
+
 const PAGES_DIR = `${PATHS.src}/pug/pages/`;
 const PAGES = fs
   .readdirSync(PAGES_DIR)
-  .filter(fileName => fileName.endsWith(".pug")); // for pug ext
+  .filter(fileName => fileName.endsWith(".pug"));
+// PAGES in .pug extension for split into separate pages (check HtmlWebpackPlugin)
+
 const ENTRY_POINTS_DIR = `${PATHS.src}/entry_points/`;
 const ENTRY_POINTS = {
   main: `${ENTRY_POINTS_DIR}main.js`,
@@ -26,6 +29,8 @@ const ENTRY_POINTS = {
   contacts: `${ENTRY_POINTS_DIR}contacts.js`,
   law_info: `${ENTRY_POINTS_DIR}law_info.js`
 };
+// ENTRY_POINTS for each page (only the code that is needed for the page)
+
 module.exports = {
   externals: {
     paths: PATHS
@@ -36,19 +41,8 @@ module.exports = {
     path: PATHS.dist,
     publicPath: "/"
   },
-
   optimization: {
     minimize: false
-    // splitChunks: {
-    //   cacheGroups: {
-    //     vendor: {
-    //       name: "vendors",
-    //       test: /\.js$/,
-    //       chunks: "all",
-    //       enforce: true
-    //     }
-    //   }
-    // } for js libraries
   },
   module: {
     rules: [
@@ -121,6 +115,7 @@ module.exports = {
       STYLES_DIR: "../scss/pages",
       SCRIPTS_DIR:"../js/pages"
     }
+    // imports in entry points
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -130,7 +125,7 @@ module.exports = {
       page =>
         new HtmlWebpackPlugin({
           minify: false,
-          template: `${PAGES_DIR}${page}`, // .pug
+          template: `${PAGES_DIR}${page}`, // still in the png extension
           filename: `./${page.replace(/\.pug/, ".html")}`, // .html
           inject: false
         })
@@ -139,7 +134,10 @@ module.exports = {
       patterns: [
         {
           from: `${PATHS.src}/images`,
-          to: `${PATHS.assets}images`
+          to: `${PATHS.assets}images`,
+          globOptions:{
+            ignore: ["**/png_sprites/**"] // sources of png sprites
+          }
         },
         {
           from: `${PATHS.src}/fonts`,

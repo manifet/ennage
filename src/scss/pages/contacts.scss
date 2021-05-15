@@ -6,6 +6,8 @@
 @import "../imports/section-head.scss";
 @import "../imports/footer";
 
+/* Contacts
+  ========================================================================== */
 .contacts {
   &__list {
     display: flex;
@@ -59,6 +61,9 @@
     margin-bottom: 1.5rem;
   }
 }
+
+/* Callback section
+  ========================================================================== */
 .callback {
   background: var(--graniteGray05);
   &__container {

@@ -1,7 +1,5 @@
 /* Reset
   ========================================================================== */
-
-// Default
 html,
 body,
 div,
@@ -89,7 +87,6 @@ video {
   vertical-align: baseline;
 }
 
-// Links
 a {
   text-decoration: none;
   &:active,
@@ -98,7 +95,6 @@ a {
   }
 }
 
-// List
 ul,
 li {
   list-style-type: none;
@@ -106,7 +102,6 @@ li {
   padding: 0;
 }
 
-// Headlines
 h1,
 h2,
 h3,
@@ -117,15 +112,16 @@ h6 {
   font-weight: normal;
 }
 
-// Default
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
+
 :focus {
   outline: 0;
 }
@@ -136,6 +132,7 @@ video {
   max-width: 100%;
   height: auto;
 }
+
 audio,
 canvas,
 iframe,
@@ -144,11 +141,11 @@ img,
 svg {
   vertical-align: middle;
 }
+
 iframe {
   border: 0;
 }
 
-// From
 textarea {
   resize: none; /*remove the resize handle on the bottom right*/
   overflow: auto;
@@ -157,6 +154,7 @@ textarea {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
 }
+
 input,
 textarea,
 select,
@@ -166,16 +164,17 @@ button {
   font-size: 100%;
   margin: 0;
 }
+
 button,
 input {
   line-height: normal;
 }
 
-// Table
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 td,
 th {
   padding: 0;

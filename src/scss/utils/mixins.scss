@@ -1,4 +1,4 @@
-// px to rem (example, width: rem(100px))
+// px to rem (example - width: rem(100px))
 @function rem($pixels, $context: $mainFontSize) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;

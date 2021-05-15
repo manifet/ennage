@@ -1,3 +1,5 @@
+/* Header
+  ========================================================================== */
 .header {
   width: 100%;
 }
@@ -83,6 +85,8 @@
   display: none;
 }
 
+/* Page head section
+  ========================================================================== */
 .page-head__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,6 +128,8 @@
   margin-top: 4.25rem;
 }
 
+/* Section heading
+  ========================================================================== */
 .section-head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,6 +185,8 @@
   fill: var(--royalBlue);
 }
 
+/* Section reference
+  ========================================================================== */
 .section-ref {
   background: var(--graniteGray05);
 }
@@ -203,6 +211,8 @@
   background: white;
 }
 
+/* Footer
+  ========================================================================== */
 .footer {
   background: var(--graniteGray);
 }
@@ -305,6 +315,8 @@
   margin-left: 1.5rem;
 }
 
+/* Post section
+  ========================================================================== */
 .post__container {
   margin-bottom: 0rem;
 }
@@ -481,6 +493,8 @@
   max-width: 25.0625rem;
 }
 
+/* Articles
+  ========================================================================== */
 .articles .section-head {
   margin-bottom: 5rem;
 }
