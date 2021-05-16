@@ -18,15 +18,7 @@
     margin-left: 2rem;
   }
   &__back {
-    background: white;
-    border: 0.125rem solid var(--graniteGray10);
-    padding: 1rem 1.5rem;
     margin-top: 4.25rem;
-    color: var(--royalBlue);
-    &-arrow {
-      margin-right: 0.75rem;
-      fill: var(--royalBlue);
-    }
     & + .page-head__wrap {
       margin-top: 4.25rem;
     }

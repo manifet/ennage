@@ -112,16 +112,7 @@
 }
 
 .page-head__back {
-  background: white;
-  border: 0.125rem solid var(--graniteGray10);
-  padding: 1rem 1.5rem;
   margin-top: 4.25rem;
-  color: var(--royalBlue);
-}
-
-.page-head__back-arrow {
-  margin-right: 0.75rem;
-  fill: var(--royalBlue);
 }
 
 .page-head__back + .page-head__wrap {
@@ -361,6 +352,7 @@
   width: 5rem;
   height: 5rem;
   margin-bottom: 1.5rem;
+  background-size: 300%;
 }
 
 /* Callback section
@@ -388,6 +380,7 @@
   width: 5rem;
   height: 5rem;
   margin-bottom: 1.875rem;
+  background-size: 300%;
 }
 
 .callback__heading {
@@ -440,14 +433,13 @@
 .callback__input, .callback__textarea {
   width: 100%;
   background: white;
-  border: 0.0625rem solid var(--graniteGray35);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 0.25rem;
   padding: 1rem;
   font-family: "Source Sans Pro";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 1.5rem;
   color: var(--graniteGray);
@@ -457,13 +449,42 @@
   outline: none;
 }
 
-.callback__textarea {
-  height: 10.5rem;
+.callback__input:hover, .callback__textarea:hover {
+  background: var(--royalBlue05);
+  outline: 0.0625rem solid var(--royalBlue);
 }
 
-.callback__submit {
-  background: var(--graniteGray10);
-  color: var(--graniteGray65);
-  padding: 0.5rem 2.4375rem;
+.callback__input:focus, .callback__textarea:focus {
+  background: white;
+  outline: 0.125rem solid var(--royalBlue);
+  color: var(--grayBlue);
+}
+
+.callback__input[data-validate="false"]:not(:focus) {
+  outline: 0.0625rem solid var(--carminePink);
+}
+
+.callback__input:-moz-placeholder-shown {
+  background: white;
+  outline: 0.0625rem solid var(--graniteGray35);
+}
+
+.callback__input:-ms-input-placeholder {
+  background: white;
+  outline: 0.0625rem solid var(--graniteGray35);
+}
+
+.callback__input:placeholder-shown {
+  background: white;
+  outline: 0.0625rem solid var(--graniteGray35);
+}
+
+.callback__input[data-validate="invalid"]:not(:focus) {
+  outline: 0.0625rem solid var(--carminePink);
+}
+
+.callback__textarea {
+  height: 10.5rem;
+  outline: 0.0625rem solid var(--graniteGray35);
 }
 

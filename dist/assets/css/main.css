@@ -350,7 +350,8 @@ a {
   text-decoration: none;
 }
 
-a:active, a:hover {
+a:active,
+a:hover {
   outline: 0;
 }
 
@@ -491,7 +492,9 @@ li {
   --royalBlue: #4f68ec;
   --royalBlue10: #edf0fd;
   --royalBlue05: #f6f7fe;
+  --grayBlue: #25262e;
   --graniteGray: #2c2f43;
+  --carminePink: #f54f45;
   --graniteGray75: #616372;
   --graniteGray65: #767885;
   --graniteGray35: #b5b6bd;
@@ -506,8 +509,8 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 .container {
@@ -533,8 +536,7 @@ li {
           justify-content: center;
 }
 
-.btn {
-  font-family: "Source Sans Pro";
+.btn, .btn-large, .btn-ref {
   font-style: normal;
   font-weight: bold;
   font-size: 0.875rem;
@@ -548,37 +550,69 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 0.25rem;
   white-space: nowrap;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
-.btn--blue {
+.disable.btn, .disable.btn-large, .disable.btn-ref {
+  color: var(--graniteGray65);
+  background: var(--graniteGray10);
+  pointer-events: none;
+}
+
+.btn {
+  font-family: "Source Sans Pro";
+  padding: 0.5rem 2.4375rem;
+  border-radius: 0.25rem;
+}
+
+.btn__black {
+  background: var(--graniteGray);
+  color: white;
+}
+
+.btn__black:hover {
+  background: var(--royalBlue);
+}
+
+.btn__blue {
   background: var(--royalBlue);
   color: white;
-  padding: 0.5rem 2.5rem;
 }
 
-.btn__ref {
+.btn__blue:hover {
+  background: var(--graniteGray);
+}
+
+.btn-large {
+  font-family: "Source Sans Pro";
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+}
+
+.btn-ref {
   font-family: "Oswald";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
   border-radius: 6.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  white-space: nowrap;
   text-transform: uppercase;
+  background: white;
+  border: 0.125rem solid var(--graniteGray10);
+  padding: 1rem 1.5rem;
+  color: var(--royalBlue);
+}
+
+.btn-ref__icon {
+  fill: var(--royalBlue);
+}
+
+.btn-ref__icon + span,
+span + .btn-ref__icon {
+  margin-left: 0.75rem;
 }
 
 /* Preloader

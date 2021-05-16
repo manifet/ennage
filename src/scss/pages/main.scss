@@ -52,7 +52,9 @@ li {
   --royalBlue: #4f68ec;
   --royalBlue10: #edf0fd;
   --royalBlue05: #f6f7fe;
+  --grayBlue: #25262e;
   --graniteGray: #2c2f43;
+  --carminePink: #f54f45;
   --graniteGray75: #616372;
   --graniteGray65: #767885;
   --graniteGray35: #b5b6bd;
@@ -65,8 +67,8 @@ li {
   display: none;
   flex-direction: column;
   margin: 0 auto;
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 100%;
+  min-width: 100%;
 }
 .container {
   width: 95%;
@@ -81,8 +83,8 @@ li {
   align-items: center;
   justify-content: center;
 }
-.btn {
-  font-family: "Source Sans Pro";
+
+%btnStyles {
   font-style: normal;
   font-weight: bold;
   font-size: 0.875rem;
@@ -90,26 +92,57 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0.25rem;
   white-space: nowrap;
   width: fit-content;
-  &--blue {
+  transition: 0.2s;
+  cursor: pointer;
+  &.disable {
+    color: var(--graniteGray65);
+    background: var(--graniteGray10);
+    pointer-events: none;
+  }
+}
+.btn {
+  @extend %btnStyles;
+  font-family: "Source Sans Pro";
+  padding: 0.5rem rem(39px);
+  border-radius: 0.25rem;
+  &__black {
+    background: var(--graniteGray);
+    color: white;
+    &:hover {
+      background: var(--royalBlue);
+    }
+  }
+  &__blue {
     background: var(--royalBlue);
     color: white;
-    padding: 0.5rem 2.5rem;
+    &:hover {
+      background: var(--graniteGray);
+    }
   }
-  &__ref {
+  &-large {
+    @extend %btnStyles;
+    font-family: "Source Sans Pro";
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+  }
+  &-ref {
+    @extend %btnStyles;
     font-family: "Oswald";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 0.875rem;
-    line-height: 1.5rem;
     border-radius: rem(100px);
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    white-space: nowrap;
     text-transform: uppercase;
+    background: white;
+    border: 0.125rem solid var(--graniteGray10);
+    padding: 1rem 1.5rem;
+    color: var(--royalBlue);
+    &__icon {
+      fill: var(--royalBlue);
+      & + span,
+      span + & {
+        margin-left: 0.75rem;
+      }
+    }
   }
 }
 

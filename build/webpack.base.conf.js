@@ -113,7 +113,7 @@ module.exports = {
   resolve: {
     alias: {
       STYLES_DIR: "../scss/pages",
-      SCRIPTS_DIR:"../js/pages"
+      SCRIPTS_DIR:"../js"
     }
     // imports in entry points
   },

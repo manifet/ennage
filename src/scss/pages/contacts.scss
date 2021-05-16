@@ -59,6 +59,7 @@
     width: 5rem;
     height: 5rem;
     margin-bottom: 1.5rem;
+    background-size: 300%;
   }
 }
 
@@ -77,6 +78,7 @@
     width: 5rem;
     height: 5rem;
     margin-bottom: 1.875rem;
+    background-size: 300%;
   }
   &__heading {
     font-family: "Oswald";
@@ -111,27 +113,43 @@
   }
   &__input,
   &__textarea {
-      width: 100%;
+    width: 100%;
     background: white;
-    border: 0.0625rem solid var(--graniteGray35);
     box-sizing: border-box;
     border-radius: 0.25rem;
     padding: 1rem;
     font-family: "Source Sans Pro";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 1rem;
     line-height: 1.5rem;
     color: var(--graniteGray);
     appearance: none;
     outline: none;
+    &:hover {
+      background: var(--royalBlue05);
+      outline: 0.0625rem solid var(--royalBlue);
+    }
+    &:focus {
+      background: white;
+      outline: 0.125rem solid var(--royalBlue);
+      color: var(--grayBlue);
+    }
+  }
+  &__input {
+    &[data-validate="false"]:not(:focus) {
+      outline: 0.0625rem solid var(--carminePink);
+    }
+    &:placeholder-shown {
+      background: white;
+      outline: 0.0625rem solid var(--graniteGray35);
+    }
+    &[data-validate="invalid"]:not(:focus) {
+      outline: 0.0625rem solid var(--carminePink);
+    }
   }
   &__textarea {
     height: rem(168px);
-  }
-  &__submit {
-    background: var(--graniteGray10);
-    color: var(--graniteGray65);
-    padding: 0.5rem rem(39px);
+    outline: 0.0625rem solid var(--graniteGray35);
   }
 }

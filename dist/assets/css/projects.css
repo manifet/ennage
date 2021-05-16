@@ -112,16 +112,7 @@
 }
 
 .page-head__back {
-  background: white;
-  border: 0.125rem solid var(--graniteGray10);
-  padding: 1rem 1.5rem;
   margin-top: 4.25rem;
-  color: var(--royalBlue);
-}
-
-.page-head__back-arrow {
-  margin-right: 0.75rem;
-  fill: var(--royalBlue);
 }
 
 .page-head__back + .page-head__wrap {
@@ -332,6 +323,7 @@
   width: 5rem;
   height: 5rem;
   margin-right: 2.5rem;
+  background-size: 300%;
 }
 
 .projects-page__wrap {

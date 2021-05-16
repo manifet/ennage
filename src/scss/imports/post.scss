@@ -64,8 +64,8 @@
     font-size: 1rem;
     line-height: 2rem;
     color: var(--graniteGray65);
-    &-par{
-      &:not(:last-child){
+    &-par {
+      &:not(:last-child) {
         margin-bottom: 2rem;
       }
     }
@@ -82,29 +82,21 @@
     margin-bottom: 5rem;
     justify-content: center;
     &-link {
-      color: white;
-      font-size: 0.875rem;
-      line-height: 1.5rem;
-      background: var(--graniteGray);
-      padding: 1rem 2rem;
-      white-space: nowrap;
-      width: fit-content;
       &:not(:last-child) {
         margin-right: 1rem;
       }
     }
   }
-  &__download {
+  &__downloads {
     display: flex;
     justify-content: center;
     align-items: center;
-    &-appstore {
-      padding: rem(12px) rem(14px);
-      background: var(--graniteGray);
+    &-btn {
+      padding: rem(11px) rem(14px);
     }
-  }
-  &__btn-icon {
-    fill: white;
+    &-icon {
+      fill: white;
+    }
   }
   &__postscript {
     background: var(--royalBlue05);

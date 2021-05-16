@@ -32,7 +32,7 @@
           <li class="nav__item"><a class="nav__item-link" href="./contacts.html">Контакты</a></li>
         </ul>
       </nav>
-      <button class="btn--blue btn">Связаться с нами</button>
+      <button class="btn btn__blue">Связаться с нами</button>
     </div>
     <div class="hamburger">
       <svg class="header__icon hamburger__open" width="40" height="24" viewBox="0 0 40 24">
@@ -61,15 +61,15 @@
         <div class="contacts__container container">
           <ul class="contacts__list">
             <li class="contacts__item">
-              <div class="contacts__emoji" style="background:url('./assets/images/sprites.png') -160px -0;"></div>
+              <div class="contacts__emoji" style="background-image: url('./assets/images/sprites.png');background-position: -160px -80px;"></div>
               <div class="contacts__item-title">Звоните</div><a class="contacts__item-link" href="tel:+79876543210">+7 (987) 654-32-10</a>
             </li>
             <li class="contacts__item">
-              <div class="contacts__emoji" style="background:url('./assets/images/sprites.png') -80px -80px;"></div>
+              <div class="contacts__emoji" style="background-image: url('./assets/images/sprites.png');background-position: -400px 0;"></div>
               <div class="contacts__item-title">Пишите</div><a class="contacts__item-link" href="mailto:Ennage@team.ru">Ennage@team.ru</a>
             </li>
             <li class="contacts__item">
-              <div class="contacts__emoji" style="background:url('./assets/images/sprites.png') -0 -160px;"></div>
+              <div class="contacts__emoji" style="background-image: url('./assets/images/sprites.png');background-position: 0 -160px;"></div>
               <div class="contacts__item-title">смотрите</div>
               <ul class="contacts__sublist">
                 <li class="contacts__subitem"><a class="contacts__icon-link">
@@ -95,26 +95,26 @@
       </section>
       <section class="callback">
         <div class="callback__container container">
-          <div class="callback__emoji" style="background:url('./assets/images/sprites.png') -80px -0;"></div>
+          <div class="callback__emoji" style="background-image: url('./assets/images/sprites.png');background-position: -80px -400px;"></div>
           <div class="callback__heading">или оставьте заявку</div>
           <form class="callback__form">
             <div class="callback__wrap">
               <label class="callback__label" for="callback-input1">Как к вам обращаться? *</label>
-              <input class="callback__input" id="callback-input1" type="text" placeholder="Иванов Иван Иванович">
+              <input class="callback__input" name="name" id="callback-input1" type="text" placeholder="Иванов Иван Иванович">
             </div>
             <div class="callback__wrap">
               <label class="callback__label" for="callback-input2">Ваша почта *</label>
-              <input class="callback__input" id="callback-input2" type="text" placeholder="Placeholder">
+              <input class="callback__input" name="email" id="callback-input2" type="text" placeholder="Placeholder">
             </div>
             <div class="callback__wrap">
               <label class="callback__label" for="callback-input3">Ваш номер телефона *</label>
-              <input class="callback__input" id="callback-input3" type="text" placeholder="+7 (987) 654-32-10">
+              <input class="callback__input" name="phone" id="callback-input3" type="text" placeholder="+7 (987) 654-32-10">
             </div>
             <div class="callback__wrap">
               <label class="callback__label" for="callback-textarea1">Расскажите, чем можем быть полезны?</label>
               <textarea class="callback__textarea" id="callback-textarea1" type="text" placeholder="Ссылка на резюме, задача, предложение — все что угодно:)"></textarea>
             </div>
-            <button class="callback__submit btn" type="submit">Отправить</button>
+            <button class="callback__submit btn btn__blue" type="submit">Отправить</button>
           </form>
         </div>
       </section>
@@ -141,5 +141,6 @@
 </footer>
     </div>
     <script src="./assets/js/main.js" type="text/javascript"></script>
+    <script src="./assets/js/contacts.js" type="text/javascript"></script>
   </body>
 </html>

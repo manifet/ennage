@@ -1,7 +1,7 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 522:
+/***/ 573:
 /***/ (function() {
 
 var preloader = document.querySelector(".preloader");
@@ -73,8 +73,8 @@ window.addEventListener("load", function () {
 /************************************************************************/
 !function() {
 "use strict";
-/* harmony import */ var SCRIPTS_DIR_preloader_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(522);
-/* harmony import */ var SCRIPTS_DIR_preloader_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(SCRIPTS_DIR_preloader_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var SCRIPTS_DIR_main_preloader_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(573);
+/* harmony import */ var SCRIPTS_DIR_main_preloader_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(SCRIPTS_DIR_main_preloader_js__WEBPACK_IMPORTED_MODULE_0__);
 
 
 }();
