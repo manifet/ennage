@@ -1,6 +1,10 @@
 /* Articles
   ========================================================================== */
 .articles {
+  &__container{
+    // To insert a container of articles without margin-bottom on the blog.html page
+    margin-bottom: 0rem;
+  }
   & .section-head {
     margin-bottom: 5rem;
   }
@@ -8,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-right: -1rem;
   }
   &__item {
     max-width: rem(592px);
@@ -20,6 +25,7 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 2rem;
+    margin-right: 1rem;
     &-wrap {
       display: flex;
       flex-direction: column;
@@ -57,6 +63,9 @@
     line-height: 2rem;
     color: var(--graniteGray);
     margin-bottom: 1.5rem;
+    & + &{
+      margin-left: 1rem;
+    }
   }
   &__ref {
     font-family: "Source Sans Pro";

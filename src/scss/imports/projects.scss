@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-right: -1rem;
   }
   &__item {
     margin-bottom: 2rem;
@@ -12,6 +13,7 @@
     flex: 0 0 auto;
     background: var(--graniteGray);
     height: rem(377px);
+    margin-right: 1rem;
     &-wrap {
       display: flex;
       flex-direction: column;

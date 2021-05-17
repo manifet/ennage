@@ -12,7 +12,7 @@ html(lang="en")
         div(class="wrapper")
             include ../includes/header.pug
             section(class="page-head")
-                div(class="page-head__container container")
+                div(class=" container")
                     a(href="./projects.html" class="page-head__back btn-ref")
                         svg(class="btn-ref__icon" width="33" height="13" viewBox="0 0 33 13")
                             use(xlink:href="./assets/images/sprites.svg#arrow-left")
@@ -20,7 +20,7 @@ html(lang="en")
                     div(class="page-head__wrap")
                         div(class="section-head")
                             div(class="section-head__wrap")
-                                div(class="section-head__heading") Supreme Sausage 	&#128293;
+                                div(class="section-head__heading") Supreme Sausage 	&#127789;
                                 div(class="section-head__subheading") доступность превыше
                         div(class="page-head__text") Приложение для фанатов бренда Supreme. Спрос на лимитированные коллекции бренда всегда был большим. Купить «попозже» не  получится – все раскупается в течение первых секунд. Чтобы успевать покупать желанные вещи, люди начали писать «ботов», которые банально брали вещи за людей. Однако, ботов на операционной системе iOS никто не делал, и мы такого создали. Проект не является коммерческим и живет только на инициативе команды.
             section(class="post")
@@ -49,7 +49,7 @@ html(lang="en")
                                     div(class="post__title") преемственность
                                     div(class="post__text") Кроме того, узнаваемость бренда так же оставалась важным критерием. Между стилистическими решениями бренда и нашего приложения, пользователь подсознательно должен проводить параллель. Это вызывает меньше вопросов при первом заходе в приложение.
                         li(class="post__item")
-                            div(class="post__img-wrap post__bigimg-wrap")
+                            div(class="post__img-wrap post__img-wrap--large")
                                 img(class="post__img" src="./assets/images/content/figma.jpg")
                             div(class="post__inner")
                                 div(class="post__heading") Результаты &#9989;
@@ -68,7 +68,7 @@ html(lang="en")
                                             svg(class="post__downloads-icon" width="139" height="36" viewBox="0 0 139 36")
                                                 use(xlink:href="./assets/images/sprites.svg#appstore")
             section(class="projects section-ref")
-                div(class="projects__container section-ref__container container")
+                div(class=" section-ref__container container")
                     div(class="section-ref__title") Другие проекты
                     ul(class="projects__list")
                         li(class="projects__item")
@@ -93,4 +93,4 @@ html(lang="en")
                                 div(class="projects__img-wrap")
                                     img(class="projects__img" src="./assets/images/projects/reference/dizain_santehnika.png")
             include ../includes/footer.pug
-        script(src="./assets/js/main.js" type="text/javascript")
+        include ../includes/scripts.pug

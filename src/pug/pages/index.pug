@@ -12,7 +12,7 @@ html(lang="en")
         div(class="wrapper")
             include ../includes/header.pug
             section(class="page-head")
-                div(class="page-head__container container")
+                div(class=" container")
                     div(class="page-head__wrap")
                         div(class="section-head")
                             div(class="section-head__wrap")
@@ -21,7 +21,7 @@ html(lang="en")
                         div(class="page-head__text") Если вы здесь, то наверняка знаете, что мы делаем. А делаем мы крутые проекты и рассказываем о них. Все самое интересное находится прямо на следующем экране и, конечно же, в нашем блоге.
                             p() Рады приветствовать! Добро пожаловать в гости к ENNAGE!
             div(class="projects")
-                div(class="projects__container container")
+                div(class=" container")
                     ul(class="projects__list")
                         li(class="projects__item")
                             a(href="./supreme_sausage.html" class="projects__link-wrap")
@@ -45,7 +45,7 @@ html(lang="en")
                                 div(class="projects__img-wrap")
                                     img(class="projects__img" src="./assets/images/projects/reference/dizain_santehnika.png")
             section(class="articles")
-                div(class="articles__container container")
+                div(class="container")
                     div(class="section-head")
                         div(class="section-head__wrap")
                             div(class="section-head__heading") из жизни &#127795;
@@ -64,7 +64,7 @@ html(lang="en")
                                     img(class="articles__img" src="./assets/images/articles/article_2.jpg")
                                 span(class="articles__title") Бег начинается с...
                                 div(class="articles__text") Иронично, что человек на фотографии с превью бежит неправильно... Ну или он только начал свой забег?  Давайте разбираться вместе с Safe Running! Расскажем как появилась идея приложения, как мы подошли к исследованиям и как движется разработка.
-                            a(href="./article.html" class="articles__ref") Читать статью
+                            a(href="./run.html" class="articles__ref") Читать статью
             section(class="about")
                 div(class="about__container container")
                     div(class="section-head")
@@ -81,4 +81,4 @@ html(lang="en")
                     div(class="about__img-wrap")
                         img(class="about__img" src="./assets/images/content/work.jpg")
             include ../includes/footer.pug
-        script(src="./assets/js/main.js" type="text/javascript")
+        include ../includes/scripts.pug

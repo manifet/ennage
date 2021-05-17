@@ -24,7 +24,7 @@ const ENTRY_POINTS = {
   projects: `${ENTRY_POINTS_DIR}projects.js`,
   blog: `${ENTRY_POINTS_DIR}blog.js`,
   404: `${ENTRY_POINTS_DIR}404.js`,
-  article: `${ENTRY_POINTS_DIR}article.js`,
+  run: `${ENTRY_POINTS_DIR}run.js`,
   supreme_sausage: `${ENTRY_POINTS_DIR}supreme_sausage.js`,
   contacts: `${ENTRY_POINTS_DIR}contacts.js`,
   law_info: `${ENTRY_POINTS_DIR}law_info.js`

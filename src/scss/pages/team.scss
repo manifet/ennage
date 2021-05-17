@@ -10,15 +10,15 @@
   ========================================================================== */
 .team {
   background: var(--graniteGray05);
+  padding-top: 2rem;
   &__container {
-    margin-top: 2rem;
     margin-bottom: 0;
   }
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 -2rem;
+    margin-right: -2rem;
   }
   &__item {
     max-width: rem(384px);
@@ -29,7 +29,8 @@
     flex-direction: column;
     align-items: center;
     background: white;
-    margin: 0 2rem 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
   }
   &__img {
     width: 100%;

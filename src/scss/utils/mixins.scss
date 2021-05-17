@@ -1,4 +1,5 @@
-// px to rem (example - width: rem(100px))
+@import "./vars.scss";
+
 @function rem($pixels, $context: $mainFontSize) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
@@ -6,6 +7,17 @@
   @if (unitless($context)) {    $context: $context * 1px;
   }
   @return $pixels / $context * 1rem;
+}
+
+@mixin tablets {
+  @media screen and (max-width: $tableWidth ) {
+    @content;
+  }
+}
+@mixin phones {
+  @media screen and (max-width: $phoneWidth ) {
+    @content;
+  }
 }
 
 

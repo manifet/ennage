@@ -81,6 +81,14 @@
   line-height: 1.5rem;
 }
 
+.nav__item-link:hover {
+  color: var(--royalBlue);
+}
+
+.active .nav__item-link {
+  color: var(--royalBlue);
+}
+
 .hamburger {
   display: none;
 }
@@ -282,6 +290,10 @@
 
 /* Contacts
   ========================================================================== */
+.contacts__container {
+  margin-bottom: 6.5rem;
+}
+
 .contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,11 +371,12 @@
   ========================================================================== */
 .callback {
   background: var(--graniteGray05);
+  padding: 3.5rem 0 0 0;
 }
 
 .callback__container {
-  margin: 3.5rem auto 4.5rem;
   max-width: 24rem;
+  margin-bottom: 4.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,8 +390,8 @@
 }
 
 .callback__emoji {
-  width: 5rem;
-  height: 5rem;
+  min-width: 5rem;
+  min-height: 5rem;
   margin-bottom: 1.875rem;
   background-size: 300%;
 }

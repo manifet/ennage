@@ -10,9 +10,30 @@ html(lang="en")
     body
         include ../includes/preloader.pug
         div(class="wrapper")
-            include ../includes/header.pug
+            header(class="header")
+                div(class="header__container container")
+                    a(href="./index.html" class="logo")
+                        svg(class="header__icon" width="32" height="28" viewBox="0 0 32 28")
+                            use(xlink:href="./assets/images/sprites.svg#logo")
+                    div(class="header__overlay")
+                        nav(class="nav")
+                            ul(class="nav__list")
+                                li(class="nav__item active")
+                                    a(href="./team.html" class="nav__item-link") О команде
+                                li(class="nav__item nav__item--static")
+                                    a(href="./projects.html" class="nav__item-link") Наши проекты
+                                li(class="nav__item")
+                                    a(href="./blog.html" class="nav__item-link") Блог
+                                li(class="nav__item")
+                                    a(href="./contacts.html" class="nav__item-link") Контакты
+                        button(class="btn btn__blue") Связаться с нами
+                    div(class="hamburger")
+                        svg(class="header__icon hamburger__open" width="40" height="24" viewBox="0 0 40 24")
+                            use(xlink:href="./assets/images/sprites.svg#hamburger")
+                        svg(class="header__icon hamburger__close" width="34" height="34" viewBox="0 0 34 34")
+                            use(xlink:href="./assets/images/sprites.svg#close")
             section(class="page-head")
-                div(class="page-head__container container")
+                div(class=" container")
                     div(class="page-head__wrap")
                         div(class="section-head")
                             div(class="section-head__wrap")
@@ -68,4 +89,4 @@ html(lang="en")
                             span(class="team__name") Александр савин
                             span(class="team__profession") Sound Director
             include ../includes/footer.pug
-        script(src="./assets/js/main.js" type="text/javascript")
+        include ../includes/scripts.pug

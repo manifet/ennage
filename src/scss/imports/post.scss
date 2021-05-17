@@ -24,15 +24,15 @@
     &-wrap {
       width: 100%;
       height: rem(480px);
-      margin-bottom: rem(112px);
     }
   }
-  &__bigimg-wrap {
+  &__img-wrap--large {
     height: 40rem;
   }
   &__inner {
     max-width: rem(592px);
     margin: 0 auto;
+    margin-top: rem(112px);
   }
   &__heading {
     font-family: "Oswald";
@@ -102,7 +102,7 @@
     background: var(--royalBlue05);
     border-radius: 0.5rem;
     padding: 1.5rem rem(96px);
-    margin-bottom: rem(112px);
+    margin-top: rem(80px);
     &-text {
       font-family: "Source Sans Pro";
       font-style: normal;

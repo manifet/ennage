@@ -81,6 +81,14 @@
   line-height: 1.5rem;
 }
 
+.nav__item-link:hover {
+  color: var(--royalBlue);
+}
+
+.active .nav__item-link {
+  color: var(--royalBlue);
+}
+
 .hamburger {
   display: none;
 }

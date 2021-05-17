@@ -6,13 +6,13 @@ html(lang="en")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
         link(href="./assets/css/main.css" type="text/css" rel="stylesheet")
-        link(href="./assets/css/article.css" type="text/css" rel="stylesheet")
+        link(href="./assets/css/run.css" type="text/css" rel="stylesheet")
     body
         include ../includes/preloader.pug
         div(class="wrapper")
             include ../includes/header.pug
             section(class="page-head")
-                div(class="page-head__container container")
+                div(class=" container")
                     a(href="./blog.html" class="page-head__back btn-ref")
                         svg(class="btn-ref__icon" width="33" height="13" viewBox="0 0 33 13")
                             use(xlink:href="./assets/images/sprites.svg#arrow-left")
@@ -49,7 +49,7 @@ html(lang="en")
                                     div(class="post__heading") Продолжение следует... &#128293;
                                     div(class="post__text") Мы потихоньку пишем эту статью, не теряйте нас!
             section(class="articles section-ref")
-                div(class="articles__container section-ref__container container")
+                div(class="section-ref__container container")
                     div(class="section-ref__title") Другие проекты
                     ul(class="articles__list")
                         li(class="articles__item")
@@ -67,4 +67,4 @@ html(lang="en")
                                     img(class="articles__img" src="./assets/images/content/unknown_text.png")
                             a(class="articles__ref") Читать статью
             include ../includes/footer.pug            
-        script(src="./assets/js/main.js" type="text/javascript")
+        include ../includes/scripts.pug
