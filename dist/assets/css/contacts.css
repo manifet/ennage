@@ -477,17 +477,17 @@
   outline: 0.0625rem solid var(--carminePink);
 }
 
-.callback__input:-moz-placeholder-shown {
+.callback__input:-moz-placeholder-shown:not(:focus) {
   background: white;
   outline: 0.0625rem solid var(--graniteGray35);
 }
 
-.callback__input:-ms-input-placeholder {
+.callback__input:-ms-input-placeholder:not(:focus) {
   background: white;
   outline: 0.0625rem solid var(--graniteGray35);
 }
 
-.callback__input:placeholder-shown {
+.callback__input:placeholder-shown:not(:focus) {
   background: white;
   outline: 0.0625rem solid var(--graniteGray35);
 }

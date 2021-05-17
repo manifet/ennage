@@ -38,8 +38,8 @@ frequently used blocks code for the main pages
 frequently used block styles without utils for the main page styles
 ### Page styles
 ./src/scss/pages  <br/> 
-there can be both code for a separate page, for frequently used blocks from ./src/scss/imports and also main.scss for all pages.  <br/> 
-need to import vars.scss and mixing.scss
+there can be code for a separate page and main.css,  and also code imported from ./src/css/imports <br/> 
+need to import vars.scss and mixin.scss
 ### Utils
 ./src/scss/utils  <br/> 
 separation from the main code of fonts and libraries, as well as useful tools for writing code
