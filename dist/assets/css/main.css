@@ -224,35 +224,35 @@ th {
   ========================================================================== */
 @font-face {
   font-family: "Oswald";
-  src: url(/assets/fonts/oswalddemibold.ttf);
+  src: url(../fonts/oswalddemibold.ttf);
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Oswald";
-  src: url(/assets/fonts/oswaldregular.ttf);
+  src: url(../fonts/oswaldregular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url(/assets/fonts/sourcesanspro.ttf);
+  src: url(../fonts/sourcesanspro.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url(/assets/fonts/sourcesansprosemibold.ttf);
+  src: url(../fonts/sourcesansprosemibold.ttf);
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url(/assets/fonts/sourcesansprobold.ttf);
+  src: url(../fonts/sourcesansprobold.ttf);
   font-weight: bold;
   font-style: normal;
 }

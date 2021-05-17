@@ -144,7 +144,7 @@
     &[data-validate="false"]:not(:focus) {
       outline: 0.0625rem solid var(--carminePink);
     }
-    &:placeholder-shown {
+    &:placeholder-shown:not(:focus) {
       background: white;
       outline: 0.0625rem solid var(--graniteGray35);
     }
