@@ -462,42 +462,53 @@
   outline: none;
 }
 
-.callback__input:hover, .callback__textarea:hover {
+.callback__input[data-validate="false"] {
+  outline: 0.0625rem solid var(--carminePink);
+}
+
+.callback__input:-moz-placeholder-shown {
+  background: white;
+  outline: 0.0625rem solid var(--graniteGray35);
+}
+
+.callback__input:-ms-input-placeholder {
+  background: white;
+  outline: 0.0625rem solid var(--graniteGray35);
+}
+
+.callback__input:placeholder-shown {
+  background: white;
+  outline: 0.0625rem solid var(--graniteGray35);
+}
+
+.callback__input[data-validate="invalid"] {
+  outline: 0.0625rem solid var(--carminePink);
+}
+
+.callback__input:hover {
   background: var(--royalBlue05);
   outline: 0.0625rem solid var(--royalBlue);
 }
 
-.callback__input:focus, .callback__textarea:focus {
+.callback__input:focus {
   background: white;
   outline: 0.125rem solid var(--royalBlue);
   color: var(--grayBlue);
 }
 
-.callback__input[data-validate="false"]:not(:focus) {
-  outline: 0.0625rem solid var(--carminePink);
-}
-
-.callback__input:-moz-placeholder-shown:not(:focus) {
-  background: white;
-  outline: 0.0625rem solid var(--graniteGray35);
-}
-
-.callback__input:-ms-input-placeholder:not(:focus) {
-  background: white;
-  outline: 0.0625rem solid var(--graniteGray35);
-}
-
-.callback__input:placeholder-shown:not(:focus) {
-  background: white;
-  outline: 0.0625rem solid var(--graniteGray35);
-}
-
-.callback__input[data-validate="invalid"]:not(:focus) {
-  outline: 0.0625rem solid var(--carminePink);
-}
-
 .callback__textarea {
   height: 10.5rem;
   outline: 0.0625rem solid var(--graniteGray35);
+}
+
+.callback__textarea:hover {
+  background: var(--royalBlue05);
+  outline: 0.0625rem solid var(--royalBlue);
+}
+
+.callback__textarea:focus {
+  background: white;
+  outline: 0.125rem solid var(--royalBlue);
+  color: var(--grayBlue);
 }
 

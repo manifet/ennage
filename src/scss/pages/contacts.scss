@@ -9,7 +9,7 @@
 /* Contacts
   ========================================================================== */
 .contacts {
-  &__container{
+  &__container {
     margin-bottom: 6.5rem;
   }
   &__list {
@@ -130,6 +130,19 @@
     color: var(--graniteGray);
     appearance: none;
     outline: none;
+  }
+  &__input {
+    // if input valid check default styles of input
+    &[data-validate="false"] {
+      outline: 0.0625rem solid var(--carminePink);
+    }
+    &:placeholder-shown {
+      background: white;
+      outline: 0.0625rem solid var(--graniteGray35);
+    }
+    &[data-validate="invalid"] {
+      outline: 0.0625rem solid var(--carminePink);
+    }
     &:hover {
       background: var(--royalBlue05);
       outline: 0.0625rem solid var(--royalBlue);
@@ -140,20 +153,17 @@
       color: var(--grayBlue);
     }
   }
-  &__input {
-    &[data-validate="false"]:not(:focus) {
-      outline: 0.0625rem solid var(--carminePink);
-    }
-    &:placeholder-shown:not(:focus) {
-      background: white;
-      outline: 0.0625rem solid var(--graniteGray35);
-    }
-    &[data-validate="invalid"]:not(:focus) {
-      outline: 0.0625rem solid var(--carminePink);
-    }
-  }
   &__textarea {
     height: rem(168px);
     outline: 0.0625rem solid var(--graniteGray35);
+    &:hover {
+      background: var(--royalBlue05);
+      outline: 0.0625rem solid var(--royalBlue);
+    }
+    &:focus {
+      background: white;
+      outline: 0.125rem solid var(--royalBlue);
+      color: var(--grayBlue);
+    }
   }
 }
