@@ -19,86 +19,92 @@
 </div>
     <div class="wrapper">
       <header class="header">
-        <div class="header__container container"><a class="logo" href="./index.html">
-            <svg class="header__icon" width="32" height="28" viewBox="0 0 32 28">
+        <div class="header__container container"><a class="header__logo" href="./index.html">
+            <svg class="header__icon">
               <use xlink:href="./assets/images/sprites.svg#logo"></use>
-            </svg></a>
+            </svg></a><a class="header__current-link"> </a>
+          <div class="hamburger">
+            <div class="hamburger__open">
+              <svg class="header__icon">
+                <use xlink:href="./assets/images/sprites.svg#hamburger"></use>
+              </svg>
+            </div>
+            <div class="hamburger__close">
+              <svg class="header__icon">
+                <use xlink:href="./assets/images/sprites.svg#close"></use>
+              </svg>
+            </div>
+          </div>
           <div class="header__overlay">
-            <nav class="nav">
-              <ul class="nav__list">
-                <li class="nav__item"><a class="nav__item-link" href="./team.html">О команде</a></li>
-                <li class="nav__item nav__item--static"><a class="nav__item-link" href="./projects.html">Наши проекты</a></li>
-                <li class="nav__item active"><a class="nav__item-link" href="./blog.html">Блог</a></li>
-                <li class="nav__item"><a class="nav__item-link" href="./contacts.html">Контакты</a></li>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item"><a class="header__nav-link" href="./team.html">О команде</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="./projects.html">Наши проекты</a></li>
+                <li class="header__nav-item active"><a class="header__nav-link" href="./blog.html">Блог</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="./contacts.html">Контакты</a></li>
               </ul>
             </nav>
             <button class="btn btn__blue">Связаться с нами</button>
           </div>
-          <div class="hamburger">
-            <svg class="header__icon hamburger__open" width="40" height="24" viewBox="0 0 40 24">
-              <use xlink:href="./assets/images/sprites.svg#hamburger"></use>
-            </svg>
-            <svg class="header__icon hamburger__close" width="34" height="34" viewBox="0 0 34 34">
-              <use xlink:href="./assets/images/sprites.svg#close"></use>
-            </svg>
-          </div>
         </div>
       </header>
-      <section class="page-head">
-        <div class=" container">
-          <div class="page-head__wrap">
-            <div class="section-head">
-              <div class="section-head__wrap">
-                <div class="section-head__heading">БЛОГ &#127764;</div>
-                <div class="section-head__subheading">обо всем сразу</div>
+      <main class="blog">
+        <section class="page-head">
+          <div class="page-head__container container">
+            <div class="page-head__wrap">
+              <div class="section-head">
+                <div class="section-head__wrap">
+                  <div class="section-head__heading">БЛОГ &#127764;</div>
+                  <div class="section-head__subheading">обо всем сразу</div>
+                </div>
               </div>
+              <div class="page-head__text">Рассказываем обо всем, что происходит в команде: рассказываем про то, как продвигается проект, чем занимаемся в свободное время и всякие такие интересные новости.</div>
             </div>
-            <div class="page-head__text">Рассказываем обо всем, что происходит в команде: рассказываем про то, как продвигается проект, чем занимаемся в свободное время и всякие такие интересные новости.</div>
           </div>
-        </div>
-      </section>
-      <section class="articles">
-        <div class="articles__container container">
-          <ul class="articles__list">
-            <li class="articles__item">
-              <div class="articles__item-wrap">
-                <div class="articles__img-wrap"><img class="articles__img" src="./assets/images/articles/article_1.jpg"></div><span class="articles__title">Как мы работаем</span>
-                <div class="articles__text">Если вы здесь, то наверняка знаете, что мы делаем. А делаем мы крутые проекты и рассказываем о них.  И в этой статье мы расскажем как мы работаем, какие проекты нас инетресуют, как вообще сложилась наша команда и какие у нас ценности.</div>
-              </div><a class="articles__ref">Читать статью</a>
-            </li>
-            <li class="articles__item">
-              <div class="articles__item-wrap">
-                <div class="articles__img-wrap"><img class="articles__img" src="./assets/images/articles/article_2.jpg"></div><span class="articles__title">Бег начинается с...</span>
-                <div class="articles__text">Иронично, что человек на фотографии с превью бежит неправильно... Ну или он только начал свой забег?  Давайте разбираться вместе с Safe Running! Расскажем как появилась идея приложения, как мы подошли к исследованиям и как движется разработка.</div>
-              </div><a class="articles__ref" href="./run.html">Читать статью</a>
-            </li>
-            <li class="articles__item disable">
-              <div class="articles__item-wrap">
-                <div class="articles__img-wrap"><img class="articles__img" src="./assets/images/content/unknown_article.jpg"></div>
-                <div class="articles__img-text"><img class="articles__img" src="./assets/images/content/unknown_text.png"></div>
-              </div><a class="articles__ref">Читать статью</a>
-            </li>
-            <li class="articles__item disable">
-              <div class="articles__item-wrap">
-                <div class="articles__img-wrap"><img class="articles__img" src="./assets/images/content/unknown_article.jpg"></div>
-                <div class="articles__img-text"><img class="articles__img" src="./assets/images/content/unknown_text.png"></div>
-              </div><a class="articles__ref">Читать статью</a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
+        <section class="blog__section">
+          <div class="blog__container container">
+            <ul class="articles">
+              <li class="articles__item">
+                <div class="articles__item-wrap">
+                  <div class="articles__img-wrap"><img class="articles__img" src="./assets/images/articles/article_1.jpg"></div><span class="articles__title">Как мы работаем</span>
+                  <div class="articles__text">Если вы здесь, то наверняка знаете, что мы делаем. А делаем мы крутые проекты и рассказываем о них.  И в этой статье мы расскажем как мы работаем, какие проекты нас инетресуют, как вообще сложилась наша команда и какие у нас ценности.</div>
+                </div><a class="articles__ref">Читать статью</a>
+              </li>
+              <li class="articles__item">
+                <div class="articles__item-wrap">
+                  <div class="articles__img-wrap"><img class="articles__img" src="./assets/images/articles/article_2.jpg"></div><span class="articles__title">Бег начинается с...</span>
+                  <div class="articles__text">Иронично, что человек на фотографии с превью бежит неправильно... Ну или он только начал свой забег?  Давайте разбираться вместе с Safe Running! Расскажем как появилась идея приложения, как мы подошли к исследованиям и как движется разработка.</div>
+                </div><a class="articles__ref" href="./run.html">Читать статью</a>
+              </li>
+              <li class="articles__item disable">
+                <div class="articles__item-wrap">
+                  <div class="articles__img-wrap"><img class="articles__img" src="./assets/images/content/unknown_article.jpg"></div>
+                  <div class="articles__img-text"><img class="articles__img" src="./assets/images/content/unknown_text.png"></div>
+                </div><a class="articles__ref">Читать статью</a>
+              </li>
+              <li class="articles__item disable">
+                <div class="articles__item-wrap">
+                  <div class="articles__img-wrap"><img class="articles__img" src="./assets/images/content/unknown_article.jpg"></div>
+                  <div class="articles__img-text"><img class="articles__img" src="./assets/images/content/unknown_text.png"></div>
+                </div><a class="articles__ref">Читать статью</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
 <footer class="footer">
-  <div class="footer__container container"><a class="footer__logo logo" href="./index.html">
-      <svg class="footer__icon" width="64" height="55" viewBox="0 0 32 28">
+  <div class="footer__container container"><a class="footer__logo" href="./index.html">
+      <svg class="footer__icon">
         <use xlink:href="./assets/images/sprites.svg#logo"></use>
       </svg></a>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__item-link" href="./index.html">Главная</a></li>
-        <li class="nav__item"><a class="nav__item-link" href="./team.html">О команде</a></li>
-        <li class="nav__item nav__item"><a class="nav__item-link" href="./projects.html">Наши проекты</a></li>
-        <li class="nav__item"><a class="nav__item-link" href="./blog.html">Блог</a></li>
-        <li class="nav__item"><a class="nav__item-link" href="./contacts.html">Контакты</a></li>
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./index.html">Главная</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./team.html">О команде</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./projects.html">Наши проекты</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./blog.html">Блог</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./contacts.html">Контакты</a></li>
       </ul>
     </nav>
     <div class="footer__copyright"> <a class="footer__copyright-link" href="./law_info.html">Правовая информация</a></div>

@@ -7,73 +7,79 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
         link(href="./assets/css/main.css" type="text/css" rel="stylesheet")
         link(href="./assets/css/projects.css" type="text/css" rel="stylesheet")
-    body
+    body(class="fixed")
         include ../includes/preloader.pug
         div(class="wrapper")
             header(class="header")
                 div(class="header__container container")
-                    a(href="./index.html" class="logo")
-                        svg(class="header__icon" width="32" height="28" viewBox="0 0 32 28")
-                            use(xlink:href="./assets/images/sprites.svg#logo")
+                    div(class="header__up")
+                        a(href="./index.html" class="header__logo")
+                            svg(class="header__icon")
+                                use(xlink:href="./assets/images/sprites.svg#logo")
+                        a(class="header__current-link") Наши проекты
+                        div(class="hamburger")
+                            div(class="hamburger__open")
+                                svg(class="header__icon")
+                                    use(xlink:href="./assets/images/sprites.svg#hamburger")
+                            div(class="hamburger__close")
+                                svg(class="header__icon")
+                                    use(xlink:href="./assets/images/sprites.svg#close")
                     div(class="header__overlay")
-                        nav(class="nav")
-                            ul(class="nav__list")
-                                li(class="nav__item")
-                                    a(href="./team.html" class="nav__item-link") О команде
-                                li(class="nav__item nav__item--static active")
-                                    a(href="./projects.html" class="nav__item-link") Наши проекты
-                                li(class="nav__item")
-                                    a(href="./blog.html" class="nav__item-link") Блог
-                                li(class="nav__item")
-                                    a(href="./contacts.html" class="nav__item-link") Контакты
+                        nav(class="header__nav")
+                            ul(class="header__nav-list")
+                                li(class="header__nav-item")
+                                    a(href="./team.html" class="header__nav-link") О команде
+                                li(class="header__nav-item active")
+                                    a(href="./projects.html" class="header__nav-link") Наши проекты
+                                li(class="header__nav-item")
+                                    a(href="./blog.html" class="header__nav-link") Блог
+                                li(class="header__nav-item")
+                                    a(href="./contacts.html" class="header__nav-link") Контакты
                         button(class="btn btn__blue") Связаться с нами
-                    div(class="hamburger")
-                        svg(class="header__icon hamburger__open" width="40" height="24" viewBox="0 0 40 24")
-                            use(xlink:href="./assets/images/sprites.svg#hamburger")
-                        svg(class="header__icon hamburger__close" width="34" height="34" viewBox="0 0 34 34")
-                            use(xlink:href="./assets/images/sprites.svg#close")
-            section(class="page-head")
-                div(class=" container")
-                    div(class="page-head__wrap")
-                        div(class="section-head")
-                            div(class="section-head__wrap")
-                                div(class="section-head__heading") Наши проекты &#128640;
-                                div(class="section-head__subheading") которые мы любим
-                        div(class="page-head__text") Здесь вы найдете все проекты нашей команды. Подробно расскажем о целях проектов, о процессах создания, подходах и других важных деталях. Так же, на странице реализованных проектов, есть возмонжость перейти в чат поддержки и оставить обратную связь.
-            section(class="projects-page")
-                div(class="projects-page__container container")
-                    ul(class="projects-page__list")
-                        li(class="projects-page__item")
-                            div(class="projects-page__wrap")
-                                div(class="projects-page__emoji" style="background-image: url('./assets/images/sprites.png');background-position: -80px -80px;")
-                                div(class="projects-page__inner")
-                                    a(href="./supreme_sausage.html" class="projects-page__title") Supreme sausage app
-                                    div(class="projects-page__text")  Приложение для фанатов бренда Supreme. Спрос на лимитированные коллекции бренда всегда был большим. Купить «попозже» не  получится – все раскупается в течение первых секунд. Чтобы успевать покупать желанные вещи, люди начали писать «ботов», которые позволяют заранее выбрать... 
-                            div(class="projects-page__img-wrap")
-                                img(src="./assets/images/projects/page/supreme_sausage.png" class="projects-page__img")
-                        li(class="projects-page__item")
-                            div(class="projects-page__wrap")
-                                div(class="projects-page__emoji" style="background-image: url('./assets/images/sprites.png');background-position: 0 -80px;")
-                                div(class="projects-page__inner")
-                                    a(href="" class="projects-page__title") dizain santehnika web-site
-                                    div(class="projects-page__text")  DIZAIN SANTEHNIKA позиционирует себя как поставщика премиальных материалов разу для трех целевых аудиторий: Как для оптовых и розничных покупателей, так и для дизайнеров интерьеров. Эстетика и сильные акценты на важных деталях – основные идеи проекта.
-                            div(class="projects-page__img-wrap")
-                                img(src="./assets/images/projects/page/dizain_santehnika.png" class="projects-page__img")
-                        li(class="projects-page__item")
-                            div(class="projects-page__wrap")
-                                div(class="projects-page__emoji" style="background-image: url('./assets/images/sprites.png');background-position: -80px -0;")
-                                div(class="projects-page__inner")
-                                    a(href="" class="projects-page__title") Safe runnig app
-                                    div(class="projects-page__text") Некоторое время назад нам пришла идея сделать приложение для бега, которое кроме трекинга данных и мотивационных ачивок, избавляла, максимально насколько это возможно, бегунов-любителей от проблем связанных с неправильной техникой бега. 
-                            div(class="projects-page__img-wrap")
-                                img(src="./assets/images/content/unknown_project.png" class="projects-page__img")
-                        li(class="projects-page__item")
-                            div(class="projects-page__wrap")
-                                div(class="projects-page__emoji" style="background-image: url('./assets/images/sprites.png');background-position: 0 0;")
-                                div(class="projects-page__inner")
-                                    span(class="projects-page__title") *healthcare* app
-                                    div(class="projects-page__text") Концепция приложения, у которого еще даже нет рабочего названия заключается в том, что мало кто из людей не связанных с медициной, знаю первую медицинскую помощь. К сожалению, никто не застрахован от несчастных случаев и мы хотим помочь людям лучше и быстрее ориентироваться в таких сиуациях.
-                            div(class="projects-page__img-wrap")
-                                img(src="./assets/images/content/unknown_project.png" class="projects-page__img")
+            main(class="projects-page")
+                section(class="page-head")
+                    div(class="page-head__container container")
+                        div(class="page-head__wrap")
+                            div(class="section-head")
+                                div(class="section-head__wrap")
+                                    div(class="section-head__heading") Наши проекты &#128640;
+                                    div(class="section-head__subheading") которые мы любим
+                            div(class="page-head__text") Здесь вы найдете все проекты нашей команды. Подробно расскажем о целях проектов, о процессах создания, подходах и других важных деталях. Так же, на странице реализованных проектов, есть возмонжость перейти в чат поддержки и оставить обратную связь.
+                section(class="projects-page__section")
+                    div(class="projects-page__container container")
+                        ul(class="projects-page__list")
+                            li(class="projects-page__item")
+                                div(class="projects-page__wrap")
+                                    div(class="projects-page__emoji" style="background-image: url('./assets/images/sprites.png');background-position: -80px -80px;")
+                                    div(class="projects-page__inner")
+                                        a(href="./supreme_sausage.html" class="projects-page__title") Supreme sausage app
+                                        div(class="projects-page__text")  Приложение для фанатов бренда Supreme. Спрос на лимитированные коллекции бренда всегда был большим. Купить «попозже» не  получится – все раскупается в течение первых секунд. Чтобы успевать покупать желанные вещи, люди начали писать «ботов», которые позволяют заранее выбрать... 
+                                div(class="projects-page__img-wrap")
+                                    img(src="./assets/images/projects/page/supreme_sausage.png" class="projects-page__img")
+                            li(class="projects-page__item")
+                                div(class="projects-page__wrap")
+                                    div(class="projects-page__emoji" style="background-image: url('./assets/images/sprites.png');background-position: 0 -80px;")
+                                    div(class="projects-page__inner")
+                                        a(href="" class="projects-page__title") dizain santehnika
+                                        div(class="projects-page__text")  DIZAIN SANTEHNIKA позиционирует себя как поставщика премиальных материалов разу для трех целевых аудиторий: Как для оптовых и розничных покупателей, так и для дизайнеров интерьеров. Эстетика и сильные акценты на важных деталях – основные идеи проекта.
+                                div(class="projects-page__img-wrap")
+                                    img(src="./assets/images/projects/page/dizain_santehnika.png" class="projects-page__img")
+                            li(class="projects-page__item")
+                                div(class="projects-page__wrap")
+                                    div(class="projects-page__emoji" style="background-image: url('./assets/images/sprites.png');background-position: -80px -0;")
+                                    div(class="projects-page__inner")
+                                        a(href="" class="projects-page__title") Safe runnig app
+                                        div(class="projects-page__text") Некоторое время назад нам пришла идея сделать приложение для бега, которое кроме трекинга данных и мотивационных ачивок, избавляла, максимально насколько это возможно, бегунов-любителей от проблем связанных с неправильной техникой бега. 
+                                div(class="projects-page__img-wrap")
+                                    img(src="./assets/images/content/unknown_project.png" class="projects-page__img")
+                            li(class="projects-page__item")
+                                div(class="projects-page__wrap")
+                                    div(class="projects-page__emoji" style="background-image: url('./assets/images/sprites.png');background-position: 0 0;")
+                                    div(class="projects-page__inner")
+                                        span(class="projects-page__title") *healthcare* app
+                                        div(class="projects-page__text") Концепция приложения, у которого еще даже нет рабочего названия заключается в том, что мало кто из людей не связанных с медициной, знаю первую медицинскую помощь. К сожалению, никто не застрахован от несчастных случаев и мы хотим помочь людям лучше и быстрее ориентироваться в таких сиуациях.
+                                div(class="projects-page__img-wrap")
+                                    img(src="./assets/images/content/unknown_project.png" class="projects-page__img")
             include ../includes/footer.pug
         include ../includes/scripts.pug
+        script(src="./assets/js/projects.js" type="text/javascript")

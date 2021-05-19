@@ -1,7 +1,14 @@
 /* Post section
   ========================================================================== */
 .post {
-  &__container {
+  padding-top: 2.5rem;
+  & .page-head {
+    margin-bottom: 7rem;
+    @include phones {
+      margin-bottom: 6rem;
+    }
+  }
+  &__section {
     margin-bottom: 0rem;
   }
   &__list {
@@ -15,7 +22,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
+    @include phones {
+      margin-bottom: 6rem;
+    }
+    &:last-child {
+      margin-bottom: 5rem;
+    }
   }
   &__img {
     width: 100%;
@@ -24,10 +37,16 @@
     &-wrap {
       width: 100%;
       height: rem(480px);
+      @include phones {
+        height: rem(252px);
+      }
     }
   }
   &__img-wrap--large {
     height: 40rem;
+    @include tablets {
+      height: rem(501px);
+    }
   }
   &__inner {
     max-width: rem(592px);
@@ -45,7 +64,9 @@
     margin-bottom: 3rem;
   }
   &__wrap {
-    margin-bottom: 3rem;
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
   }
   &__title {
     font-family: "Oswald";
@@ -75,16 +96,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include phones {
+      margin-top: rem(60px);
+    }
   }
   &__callback {
     display: flex;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     justify-content: center;
+    margin-right: -1rem;
+    @include tablets {
+      flex-wrap: wrap;
+    }
+    @include phones {
+      margin-bottom: 1.75rem;
+    }
     &-link {
-      &:not(:last-child) {
-        margin-right: 1rem;
-      }
+      margin-right: 1rem;
+      margin-bottom: 1rem;
     }
   }
   &__downloads {
@@ -97,6 +127,11 @@
     &-icon {
       fill: white;
     }
+  }
+  &__appstore {
+    height: rem(35px);
+    width: rem(139px);
+    display: flex;
   }
   &__postscript {
     background: var(--royalBlue05);

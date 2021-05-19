@@ -19,113 +19,123 @@
 </div>
     <div class="wrapper">
 <header class="header">
-  <div class="header__container container"><a class="logo" href="./index.html">
-      <svg class="header__icon" width="32" height="28" viewBox="0 0 32 28">
-        <use xlink:href="./assets/images/sprites.svg#logo"></use>
-      </svg></a>
+  <div class="header__container container">
+    <div class="header__up"><a class="header__logo" href="./index.html">
+        <svg class="header__icon">
+          <use xlink:href="./assets/images/sprites.svg#logo"></use>
+        </svg></a><a class="header__current-link"> </a>
+      <div class="hamburger">
+        <div class="hamburger__open">
+          <svg class="header__icon">
+            <use xlink:href="./assets/images/sprites.svg#hamburger"></use>
+          </svg>
+        </div>
+        <div class="hamburger__close">
+          <svg class="header__icon">
+            <use xlink:href="./assets/images/sprites.svg#close"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
     <div class="header__overlay">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__item-link" href="./team.html">О команде</a></li>
-          <li class="nav__item nav__item--static"><a class="nav__item-link" href="./projects.html">Наши проекты</a></li>
-          <li class="nav__item"><a class="nav__item-link" href="./blog.html">Блог</a></li>
-          <li class="nav__item"><a class="nav__item-link" href="./contacts.html">Контакты</a></li>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-link" href="./team.html">О команде</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="./projects.html">Наши проекты</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="./blog.html">Блог</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="./contacts.html">Контакты</a></li>
         </ul>
       </nav>
       <button class="btn btn__blue">Связаться с нами</button>
     </div>
-    <div class="hamburger">
-      <svg class="header__icon hamburger__open" width="40" height="24" viewBox="0 0 40 24">
-        <use xlink:href="./assets/images/sprites.svg#hamburger"></use>
-      </svg>
-      <svg class="header__icon hamburger__close" width="34" height="34" viewBox="0 0 34 34">
-        <use xlink:href="./assets/images/sprites.svg#close"></use>
-      </svg>
-    </div>
   </div>
 </header>
-      <section class="page-head">
-        <div class=" container"><a class="page-head__back btn-ref" href="./blog.html">
-            <svg class="btn-ref__icon" width="33" height="13" viewBox="0 0 33 13">
-              <use xlink:href="./assets/images/sprites.svg#arrow-left"></use>
-            </svg><span>Ко всем статьям</span></a>
-          <div class="page-head__wrap">
-            <div class="section-head">
-              <div class="section-head__wrap">
-                <div class="section-head__heading">Бег начинается с...</div>
-                <div class="section-head__subheading">постойте, с чего?</div>
-              </div>
-            </div>
-            <div class="page-head__text">С чего начинается бег все примерно представляют, но правильно ли? А в этой статье мы расскажем еще и о том, с чего начинается разработка подобного приложения.</div>
-          </div>
-        </div>
-      </section>
-      <section class="post">
-        <div class="post__container container">
-          <ul class="post__list">
-            <li class="post__item">
-              <div class="post__img-wrap"><img class="post__img" src="./assets/images/content/run.jpg"></div>
-              <div class="post__postscript"> 
-                <div class="post__postscript-text">Иронично, что человек на фотографии с превью бежит неправильно... Ну или он только начал свой забег?  Давайте разбираться вместе с Safe Running!</div>
-              </div>
-              <div class="post__inner">
-                <div class="post__wrap">
-                  <div class="post__heading">Как все начиналось &#129299;</div>
-                  <div class="post__text">Некоторое время назад нам пришла идея сделать приложение для бега, которое кроме трекинга данных и мотивационных ачивок, избавляла, максимально насколько это возможно, бегунов-любителей от проблем связанных с неправильной техникой бега. </div>
+      <main class="post">
+        <section class="page-head">
+          <div class="page-head__container container"><a class="page-head__back btn-ref" href="./blog.html">
+              <div class="btn-ref__arrow">
+                <svg class="btn-ref__icon">
+                  <use xlink:href="./assets/images/sprites.svg#arrow-left"></use>
+                </svg>
+              </div><span>Ко всем статьям</span></a>
+            <div class="page-head__wrap">
+              <div class="section-head">
+                <div class="section-head__wrap">
+                  <div class="section-head__heading">Бег начинается с...</div>
+                  <div class="section-head__subheading">постойте, с чего?</div>
                 </div>
-                <div class="post__wrap">
-                  <div class="post__heading">интересные цифры  &#128290;</div>
-                  <div class="post__text"> 
-                    <p class="post__text-par">Как мы знаем из опыта коллег по цеху, распыляться на большую аудиторию — дело гиблое, потому мы решили не накручивать много фич и сконцентрироваться на одной главной — обучении бегу. Мы придумали систему, которая выступает в роли некого тренера, которому ты рассказываешь о своей цели, немного о себе, и получаешь четкий план тренировок. </p>
-                    <p class="post__text-par">Однако, просто тренировок было недостаточно, ведь какие могут быть тренировки, когда нет техники? И мы рашили узнать аудиторию бегунов получше.</p>
-                    <p class="post__text-par">Первое что мы сделали — собрали опросник. Нам нужно было понять, пользуются ли бегуны приложениями (если да, то какими именно), есть ли у них тренера и так далее.</p>
+              </div>
+              <div class="page-head__text">С чего начинается бег все примерно представляют, но правильно ли? А в этой статье мы расскажем еще и о том, с чего начинается разработка подобного приложения.</div>
+            </div>
+          </div>
+        </section>
+        <section class="post__section">
+          <div class="post__container container">
+            <ul class="post__list">
+              <li class="post__item">
+                <div class="post__img-wrap"><img class="post__img" src="./assets/images/content/run.jpg"></div>
+                <div class="post__postscript"> 
+                  <div class="post__postscript-text">Иронично, что человек на фотографии с превью бежит неправильно... Ну или он только начал свой забег?  Давайте разбираться вместе с Safe Running!</div>
+                </div>
+                <div class="post__inner">
+                  <div class="post__wrap">
+                    <div class="post__heading">Как все начиналось &#129299;</div>
+                    <div class="post__text">Некоторое время назад нам пришла идея сделать приложение для бега, которое кроме трекинга данных и мотивационных ачивок, избавляла, максимально насколько это возможно, бегунов-любителей от проблем связанных с неправильной техникой бега. </div>
+                  </div>
+                  <div class="post__wrap">
+                    <div class="post__heading">интересные цифры  &#128290;</div>
+                    <div class="post__text"> 
+                      <p class="post__text-par">Как мы знаем из опыта коллег по цеху, распыляться на большую аудиторию — дело гиблое, потому мы решили не накручивать много фич и сконцентрироваться на одной главной — обучении бегу. Мы придумали систему, которая выступает в роли некого тренера, которому ты рассказываешь о своей цели, немного о себе, и получаешь четкий план тренировок. </p>
+                      <p class="post__text-par">Однако, просто тренировок было недостаточно, ведь какие могут быть тренировки, когда нет техники? И мы рашили узнать аудиторию бегунов получше.</p>
+                      <p class="post__text-par">Первое что мы сделали — собрали опросник. Нам нужно было понять, пользуются ли бегуны приложениями (если да, то какими именно), есть ли у них тренера и так далее.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
-            <li class="post__item">
-              <div class="post__img-wrap"><img class="post__img" src="./assets/images/content/diagram.jpg"></div>
-              <div class="post__inner">
-                <div class="post__wrap">
-                  <div class="post__heading">Продолжение следует... &#128293;</div>
-                  <div class="post__text">Мы потихоньку пишем эту статью, не теряйте нас!</div>
+              </li>
+              <li class="post__item">
+                <div class="post__img-wrap"><img class="post__img" src="./assets/images/content/diagram.jpg"></div>
+                <div class="post__inner">
+                  <div class="post__wrap">
+                    <div class="post__heading">Продолжение следует... &#128293;</div>
+                    <div class="post__text">Мы потихоньку пишем эту статью, не теряйте нас!</div>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="articles section-ref">
-        <div class="section-ref__container container">
-          <div class="section-ref__title">Другие проекты</div>
-          <ul class="articles__list">
-            <li class="articles__item">
-              <div class="articles__item-wrap">
-                <div class="articles__img-wrap"><img class="articles__img" src="./assets/images/articles/article_1.jpg"></div><span class="articles__title">Как мы работаем</span>
-                <div class="articles__text">Если вы здесь, то наверняка знаете, что мы делаем. А делаем мы крутые проекты и рассказываем о них.  И в этой статье мы расскажем как мы работаем, какие проекты нас инетресуют, как вообще сложилась наша команда и какие у нас ценности.</div>
-              </div><a class="articles__ref">Читать статью</a>
-            </li>
-            <li class="articles__item disable">
-              <div class="articles__item-wrap">
-                <div class="articles__img-wrap"><img class="articles__img" src="./assets/images/content/unknown_article.jpg"></div>
-                <div class="articles__img-text"><img class="articles__img" src="./assets/images/content/unknown_text.png"></div>
-              </div><a class="articles__ref">Читать статью</a>
-            </li>
-          </ul>
-        </div>
-      </section>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section-ref">
+          <div class="section-ref__container container">
+            <div class="section-ref__title">Другие проекты</div>
+            <ul class="articles">
+              <li class="articles__item">
+                <div class="articles__item-wrap">
+                  <div class="articles__img-wrap"><img class="articles__img" src="./assets/images/articles/article_1.jpg"></div><span class="articles__title">Как мы работаем</span>
+                  <div class="articles__text">Если вы здесь, то наверняка знаете, что мы делаем. А делаем мы крутые проекты и рассказываем о них.  И в этой статье мы расскажем как мы работаем, какие проекты нас инетресуют, как вообще сложилась наша команда и какие у нас ценности.</div>
+                </div><a class="articles__ref">Читать статью</a>
+              </li>
+              <li class="articles__item disable">
+                <div class="articles__item-wrap">
+                  <div class="articles__img-wrap"><img class="articles__img" src="./assets/images/content/unknown_article.jpg"></div>
+                  <div class="articles__img-text"><img class="articles__img" src="./assets/images/content/unknown_text.png"></div>
+                </div><a class="articles__ref">Читать статью</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
 <footer class="footer">
-  <div class="footer__container container"><a class="footer__logo logo" href="./index.html">
-      <svg class="footer__icon" width="64" height="55" viewBox="0 0 32 28">
+  <div class="footer__container container"><a class="footer__logo" href="./index.html">
+      <svg class="footer__icon">
         <use xlink:href="./assets/images/sprites.svg#logo"></use>
       </svg></a>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__item-link" href="./index.html">Главная</a></li>
-        <li class="nav__item"><a class="nav__item-link" href="./team.html">О команде</a></li>
-        <li class="nav__item nav__item"><a class="nav__item-link" href="./projects.html">Наши проекты</a></li>
-        <li class="nav__item"><a class="nav__item-link" href="./blog.html">Блог</a></li>
-        <li class="nav__item"><a class="nav__item-link" href="./contacts.html">Контакты</a></li>
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./index.html">Главная</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./team.html">О команде</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./projects.html">Наши проекты</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./blog.html">Блог</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./contacts.html">Контакты</a></li>
       </ul>
     </nav>
     <div class="footer__copyright"> <a class="footer__copyright-link" href="./law_info.html">Правовая информация</a></div>

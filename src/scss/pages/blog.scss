@@ -7,3 +7,11 @@
 @import "../imports/footer";
 
 @import "../imports/articles.scss";
+
+/* Blog
+  ========================================================================== */
+.blog {
+  &__section {
+    margin-bottom: 2rem;
+  }
+}

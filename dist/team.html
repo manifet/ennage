@@ -19,89 +19,95 @@
 </div>
     <div class="wrapper">
       <header class="header">
-        <div class="header__container container"><a class="logo" href="./index.html">
-            <svg class="header__icon" width="32" height="28" viewBox="0 0 32 28">
+        <div class="header__container container"><a class="header__logo" href="./index.html">
+            <svg class="header__icon">
               <use xlink:href="./assets/images/sprites.svg#logo"></use>
-            </svg></a>
+            </svg></a><a class="header__current-link"> </a>
+          <div class="hamburger">
+            <div class="hamburger__open">
+              <svg class="header__icon">
+                <use xlink:href="./assets/images/sprites.svg#hamburger"></use>
+              </svg>
+            </div>
+            <div class="hamburger__close">
+              <svg class="header__icon">
+                <use xlink:href="./assets/images/sprites.svg#close"></use>
+              </svg>
+            </div>
+          </div>
           <div class="header__overlay">
-            <nav class="nav">
-              <ul class="nav__list">
-                <li class="nav__item active"><a class="nav__item-link" href="./team.html">О команде</a></li>
-                <li class="nav__item nav__item--static"><a class="nav__item-link" href="./projects.html">Наши проекты</a></li>
-                <li class="nav__item"><a class="nav__item-link" href="./blog.html">Блог</a></li>
-                <li class="nav__item"><a class="nav__item-link" href="./contacts.html">Контакты</a></li>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item active"><a class="header__nav-link" href="./team.html">О команде</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="./projects.html">Наши проекты</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="./blog.html">Блог</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="./contacts.html">Контакты</a></li>
               </ul>
             </nav>
             <button class="btn btn__blue">Связаться с нами</button>
           </div>
-          <div class="hamburger">
-            <svg class="header__icon hamburger__open" width="40" height="24" viewBox="0 0 40 24">
-              <use xlink:href="./assets/images/sprites.svg#hamburger"></use>
-            </svg>
-            <svg class="header__icon hamburger__close" width="34" height="34" viewBox="0 0 34 34">
-              <use xlink:href="./assets/images/sprites.svg#close"></use>
-            </svg>
-          </div>
         </div>
       </header>
-      <section class="page-head">
-        <div class=" container">
-          <div class="page-head__wrap">
-            <div class="section-head">
-              <div class="section-head__wrap">
-                <div class="section-head__heading">О команде &#127764;</div>
-                <div class="section-head__subheading">исключительно</div>
+      <main class="team">
+        <section class="page-head">
+          <div class="page-head__container container">
+            <div class="page-head__wrap">
+              <div class="section-head">
+                <div class="section-head__wrap">
+                  <div class="section-head__heading">О команде &#127764;</div>
+                  <div class="section-head__subheading">исключительно</div>
+                </div>
               </div>
+              <div class="page-head__text">Здесь вы найдете всех участников нашей команды (или даже членов семьи :3). </div>
             </div>
-            <div class="page-head__text">Здесь вы найдете всех участников нашей команды (или даже членов семьи :3). </div>
           </div>
-        </div>
-      </section>
-      <section class="team">
-        <div class="team__container container">
-          <ul class="team__list">
-            <li class="team__item">
-              <div class="team__img-wrap"><img class="team__img" src="./assets/images/team/nesterov.png"></div><span class="team__name">Андрей Нестеров</span><span class="team__profession">Head of Development</span>
-            </li>
-            <li class="team__item">
-              <div class="team__img-wrap"><img class="team__img" src="./assets/images/team/kotov.png"></div><span class="team__name">Сергей котов</span><span class="team__profession">Head of Design</span>
-            </li>
-            <li class="team__item">
-              <div class="team__img-wrap"><img class="team__img" src="./assets/images/team/zelenov.png"></div><span class="team__name">НИКИТА ЗЕЛЕНОВ</span><span class="team__profession">Front-end Developer</span>
-            </li>
-            <li class="team__item">
-              <div class="team__img-wrap"><img class="team__img" src="./assets/images/content/unknown.jpg"></div><span class="team__name">Владислав Барченков</span><span class="team__profession">Head of Development</span>
-            </li>
-            <li class="team__item">
-              <div class="team__img-wrap"><img class="team__img" src="./assets/images/content/unknown.jpg"></div><span class="team__name">Сергей Секов</span><span class="team__profession">UX / UI Designer</span>
-            </li>
-            <li class="team__item">
-              <div class="team__img-wrap"><img class="team__img" src="./assets/images/content/unknown.jpg"></div><span class="team__name">Сергей Бычков</span><span class="team__profession">Back-end Developer</span>
-            </li>
-            <li class="team__item">
-              <div class="team__img-wrap"><img class="team__img" src="./assets/images/content/unknown.jpg"></div><span class="team__name">Николай Твердохлеб</span><span class="team__profession">Mathematician</span>
-            </li>
-            <li class="team__item">
-              <div class="team__img-wrap"><img class="team__img" src="./assets/images/content/unknown.jpg"></div><span class="team__name">Екатерина Кленина</span><span class="team__profession">Illustrator</span>
-            </li>
-            <li class="team__item">
-              <div class="team__img-wrap"><img class="team__img" src="./assets/images/content/unknown.jpg"></div><span class="team__name">Александр савин</span><span class="team__profession">Sound Director</span>
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
+        <section class="team__section">
+          <div class="team__container container">
+            <ul class="team__list">
+              <li class="team__item">
+                <div class="team__img-wrap"><img class="team__img" src="./assets/images/team/nesterov.png"></div><span class="team__name">Андрей Нестеров</span><span class="team__profession">Head of Development</span>
+              </li>
+              <li class="team__item">
+                <div class="team__img-wrap"><img class="team__img" src="./assets/images/team/kotov.png"></div><span class="team__name">Сергей котов</span><span class="team__profession">Head of Design</span>
+              </li>
+              <li class="team__item">
+                <div class="team__img-wrap"><img class="team__img" src="./assets/images/team/zelenov.png"></div><span class="team__name">НИКИТА ЗЕЛЕНОВ</span><span class="team__profession">Front-end Developer</span>
+              </li>
+              <li class="team__item">
+                <div class="team__img-wrap"><img class="team__img" src="./assets/images/content/unknown.jpg"></div><span class="team__name">Владислав Барченков</span><span class="team__profession">Head of Development</span>
+              </li>
+              <li class="team__item">
+                <div class="team__img-wrap"><img class="team__img" src="./assets/images/content/unknown.jpg"></div><span class="team__name">Сергей Секов</span><span class="team__profession">UX / UI Designer</span>
+              </li>
+              <li class="team__item">
+                <div class="team__img-wrap"><img class="team__img" src="./assets/images/content/unknown.jpg"></div><span class="team__name">Сергей Бычков</span><span class="team__profession">Back-end Developer</span>
+              </li>
+              <li class="team__item">
+                <div class="team__img-wrap"><img class="team__img" src="./assets/images/content/unknown.jpg"></div><span class="team__name">Николай Твердохлеб</span><span class="team__profession">Mathematician</span>
+              </li>
+              <li class="team__item">
+                <div class="team__img-wrap"><img class="team__img" src="./assets/images/content/unknown.jpg"></div><span class="team__name">Екатерина Кленина</span><span class="team__profession">Illustrator</span>
+              </li>
+              <li class="team__item">
+                <div class="team__img-wrap"><img class="team__img" src="./assets/images/content/unknown.jpg"></div><span class="team__name">Александр савин</span><span class="team__profession">Sound Director</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
 <footer class="footer">
-  <div class="footer__container container"><a class="footer__logo logo" href="./index.html">
-      <svg class="footer__icon" width="64" height="55" viewBox="0 0 32 28">
+  <div class="footer__container container"><a class="footer__logo" href="./index.html">
+      <svg class="footer__icon">
         <use xlink:href="./assets/images/sprites.svg#logo"></use>
       </svg></a>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__item-link" href="./index.html">Главная</a></li>
-        <li class="nav__item"><a class="nav__item-link" href="./team.html">О команде</a></li>
-        <li class="nav__item nav__item"><a class="nav__item-link" href="./projects.html">Наши проекты</a></li>
-        <li class="nav__item"><a class="nav__item-link" href="./blog.html">Блог</a></li>
-        <li class="nav__item"><a class="nav__item-link" href="./contacts.html">Контакты</a></li>
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./index.html">Главная</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./team.html">О команде</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./projects.html">Наши проекты</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./blog.html">Блог</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./contacts.html">Контакты</a></li>
       </ul>
     </nav>
     <div class="footer__copyright"> <a class="footer__copyright-link" href="./law_info.html">Правовая информация</a></div>

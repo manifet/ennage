@@ -7,90 +7,94 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
         link(href="./assets/css/main.css" type="text/css" rel="stylesheet")
         link(href="./assets/css/supreme_sausage.css" type="text/css" rel="stylesheet")
-    body
+    body(class="fixed")
         include ../includes/preloader.pug
         div(class="wrapper")
             include ../includes/header.pug
-            section(class="page-head")
-                div(class=" container")
-                    a(href="./projects.html" class="page-head__back btn-ref")
-                        svg(class="btn-ref__icon" width="33" height="13" viewBox="0 0 33 13")
-                            use(xlink:href="./assets/images/sprites.svg#arrow-left")
-                        span() ко всем проектам
-                    div(class="page-head__wrap")
-                        div(class="section-head")
-                            div(class="section-head__wrap")
-                                div(class="section-head__heading") Supreme Sausage 	&#127789;
-                                div(class="section-head__subheading") доступность превыше
-                        div(class="page-head__text") Приложение для фанатов бренда Supreme. Спрос на лимитированные коллекции бренда всегда был большим. Купить «попозже» не  получится – все раскупается в течение первых секунд. Чтобы успевать покупать желанные вещи, люди начали писать «ботов», которые банально брали вещи за людей. Однако, ботов на операционной системе iOS никто не делал, и мы такого создали. Проект не является коммерческим и живет только на инициативе команды.
-            section(class="post")
-                div(class="post__container container")
-                    ul(class="post__list")
-                        li(class="post__item")
-                            div(class="post__img-wrap")
-                                img(class="post__img" src="./assets/images/content/phone.jpg")
-                            div(class="post__inner")
-                                div(class="post__heading") доступность превыше &#128077;
-                                div(class="post__wrap")
-                                    div(class="post__title") Идея
-                                    div(class="post__text") Приложение для фанатов бренда Supreme. Спрос на лимитированные коллекции бренда всегда был большим. Купить «попозже» не  получится – все раскупается в течение первых секунд. Чтобы успевать покупать желанные вещи, люди начали писать «ботов», которые позволяют заранее выбрать конкретную вещь и указать сумму списания. Благодаря этому, пропала нужда тратить время на поиск вещи во время ее выхода в свет. Однако, ботов на операционной системе iOS никто не делал, а находиться перед монитором компьютера удобно далеко не всем. 
-                                div(class="post__wrap")
-                                    div(class="post__title") задача
-                                    div(class="post__text") Создать бота для iOS, который позволял бы совершать покупку из любой удобной локации. Более того, бот должен быть конкурентно способным среди других ботов. Принципиальное преимущество: проект не является коммерческим и живет только на инициативе команды.
-                        li(class="post__item")
-                            div(class="post__img-wrap")
-                                img(class="post__img" src="./assets/images/content/phones.jpg")
-                            div(class="post__inner")
-                                div(class="post__heading") сначала логика, потом красота &#128161;
-                                div(class="post__wrap")
-                                    div(class="post__title") скорость
-                                    div(class="post__text") Первостепенной задачей стояли именно скорость работы с приложением и мобильность. Нужно было сделать интерфейс с минимальным количеством экранов. Это спасает ситуацию, когда пользватель вспоминает о релизе в последние минуты.
-                                div(class="post__wrap")
-                                    div(class="post__title") преемственность
-                                    div(class="post__text") Кроме того, узнаваемость бренда так же оставалась важным критерием. Между стилистическими решениями бренда и нашего приложения, пользователь подсознательно должен проводить параллель. Это вызывает меньше вопросов при первом заходе в приложение.
-                        li(class="post__item")
-                            div(class="post__img-wrap post__img-wrap--large")
-                                img(class="post__img" src="./assets/images/content/figma.jpg")
-                            div(class="post__inner")
-                                div(class="post__heading") Результаты &#9989;
-                                div(class="post__wrap")
-                                    div(class="post__title") тесты
-                                    div(class="post__text") На тестовых запусках, наше приложение смогло в кротчайший срок забирать вещи. Теперь существует первое полностью бесплатное приложение под iOS.
-                                div(class="post__wrap")
-                                    div(class="post__title") закрытие &#128557;
-                                    div(class="post__text") На данный момент проект закрыт и больше не поддерживается командой в силу определенных обстоятельств.
-                                div(class="post__annexes")
-                                    div(class="post__callback")
-                                        a(class="btn-large btn__black post__callback-link") Обратная связь по проeкту
-                                        a(class="btn-large btn__black post__callback-link") Страница поддержки проекта
-                                    div(class="post__downloads")
-                                        a(class="btn btn__black post__downloads-btn")
-                                            svg(class="post__downloads-icon" width="139" height="36" viewBox="0 0 139 36")
-                                                use(xlink:href="./assets/images/sprites.svg#appstore")
-            section(class="projects section-ref")
-                div(class=" section-ref__container container")
-                    div(class="section-ref__title") Другие проекты
-                    ul(class="projects__list")
-                        li(class="projects__item")
-                            a(href="./supreme_sausage.html" class="projects__link-wrap")
-                                div(class="projects__item-wrap")
-                                    span(class="projects__title") SUPREM SAUSAGE
-                                    span(class="projects__item-type") mobile App
-                                div(class="projects__img-wrap")
-                                    img(class="projects__img" src="./assets/images/projects/reference/supreme_sausage.png")
-                        li(class="projects__item")
-                            a(class="projects__link-wrap")
-                                div(class="projects__item-wrap")
-                                    span(class="projects__title") safe running
-                                    span(class="projects__item-type") mobile App
-                                div(class="projects__img-wrap")
-                                    img(class="projects__img" src="./assets/images/projects/reference/safe_running.png")
-                        li(class="projects__item")
-                            a(class="projects__link-wrap")
-                                div(class="projects__item-wrap")
-                                    span(class="projects__title") DIZAIN SANTEHNIKA
-                                    span(class="projects__item-type") web-site
-                                div(class="projects__img-wrap")
-                                    img(class="projects__img" src="./assets/images/projects/reference/dizain_santehnika.png")
+            main(class="post")
+                section(class="page-head")
+                    div(class="page-head__container container")
+                        a(href="./projects.html" class="page-head__back btn-ref")
+                            div(class="btn-ref__arrow")
+                                svg(class="btn-ref__icon")
+                                    use(xlink:href="./assets/images/sprites.svg#arrow-left")
+                            span() ко всем проектам
+                        div(class="page-head__wrap")
+                            div(class="section-head")
+                                div(class="section-head__wrap")
+                                    div(class="section-head__heading") Supreme Sausage 	&#127789;
+                                    div(class="section-head__subheading") доступность превыше
+                            div(class="page-head__text") Приложение для фанатов бренда Supreme. Спрос на лимитированные коллекции бренда всегда был большим. Купить «попозже» не  получится – все раскупается в течение первых секунд. Чтобы успевать покупать желанные вещи, люди начали писать «ботов», которые банально брали вещи за людей. Однако, ботов на операционной системе iOS никто не делал, и мы такого создали. Проект не является коммерческим и живет только на инициативе команды.
+                section(class="post__section")
+                    div(class="post__container container")
+                        ul(class="post__list")
+                            li(class="post__item")
+                                div(class="post__img-wrap")
+                                    img(class="post__img" src="./assets/images/content/phone.jpg")
+                                div(class="post__inner")
+                                    div(class="post__heading") доступность превыше &#128077;
+                                    div(class="post__wrap")
+                                        div(class="post__title") Идея
+                                        div(class="post__text") Приложение для фанатов бренда Supreme. Спрос на лимитированные коллекции бренда всегда был большим. Купить «попозже» не  получится – все раскупается в течение первых секунд. Чтобы успевать покупать желанные вещи, люди начали писать «ботов», которые позволяют заранее выбрать конкретную вещь и указать сумму списания. Благодаря этому, пропала нужда тратить время на поиск вещи во время ее выхода в свет. Однако, ботов на операционной системе iOS никто не делал, а находиться перед монитором компьютера удобно далеко не всем. 
+                                    div(class="post__wrap")
+                                        div(class="post__title") задача
+                                        div(class="post__text") Создать бота для iOS, который позволял бы совершать покупку из любой удобной локации. Более того, бот должен быть конкурентно способным среди других ботов. Принципиальное преимущество: проект не является коммерческим и живет только на инициативе команды.
+                            li(class="post__item")
+                                div(class="post__img-wrap")
+                                    img(class="post__img" src="./assets/images/content/phones.jpg")
+                                div(class="post__inner")
+                                    div(class="post__heading") сначала логика, потом красота &#128161;
+                                    div(class="post__wrap")
+                                        div(class="post__title") скорость
+                                        div(class="post__text") Первостепенной задачей стояли именно скорость работы с приложением и мобильность. Нужно было сделать интерфейс с минимальным количеством экранов. Это спасает ситуацию, когда пользватель вспоминает о релизе в последние минуты.
+                                    div(class="post__wrap")
+                                        div(class="post__title") преемственность
+                                        div(class="post__text") Кроме того, узнаваемость бренда так же оставалась важным критерием. Между стилистическими решениями бренда и нашего приложения, пользователь подсознательно должен проводить параллель. Это вызывает меньше вопросов при первом заходе в приложение.
+                            li(class="post__item")
+                                div(class="post__img-wrap post__img-wrap--large")
+                                    img(class="post__img" src="./assets/images/content/figma.jpg")
+                                div(class="post__inner")
+                                    div(class="post__heading") Результаты &#9989;
+                                    div(class="post__wrap")
+                                        div(class="post__title") тесты
+                                        div(class="post__text") На тестовых запусках, наше приложение смогло в кротчайший срок забирать вещи. Теперь существует первое полностью бесплатное приложение под iOS.
+                                    div(class="post__wrap")
+                                        div(class="post__title") закрытие &#128557;
+                                        div(class="post__text") На данный момент проект закрыт и больше не поддерживается командой в силу определенных обстоятельств.
+                                    div(class="post__annexes")
+                                        div(class="post__callback")
+                                            a(class="btn-large btn__black post__callback-link") Обратная связь по проeкту
+                                            a(class="btn-large btn__black post__callback-link") Страница поддержки проекта
+                                        div(class="post__downloads")
+                                            a(class="btn btn__black post__downloads-btn")
+                                                div(class="post__appstore")
+                                                    svg(class="post__downloads-icon")
+                                                        use(xlink:href="./assets/images/sprites.svg#appstore")
+                section(class="section-ref")
+                    div(class="section-ref__container container")
+                        div(class="section-ref__title") Другие проекты
+                        ul(class="projects")
+                            li(class="projects__item")
+                                a(href="./supreme_sausage.html" class="projects__link-wrap")
+                                    div(class="projects__item-wrap")
+                                        span(class="projects__title") SUPREM SAUSAGE
+                                        span(class="projects__item-type") mobile App
+                                    div(class="projects__img-wrap")
+                                        img(class="projects__img" src="./assets/images/projects/reference/supreme_sausage.png")
+                            li(class="projects__item")
+                                a(class="projects__link-wrap")
+                                    div(class="projects__item-wrap")
+                                        span(class="projects__title") safe running
+                                        span(class="projects__item-type") mobile App
+                                    div(class="projects__img-wrap")
+                                        img(class="projects__img" src="./assets/images/projects/reference/safe_running.png")
+                            li(class="projects__item")
+                                a(class="projects__link-wrap")
+                                    div(class="projects__item-wrap")
+                                        span(class="projects__title") DIZAIN SANTEHNIKA
+                                        span(class="projects__item-type") web-site
+                                    div(class="projects__img-wrap")
+                                        img(class="projects__img" src="./assets/images/projects/reference/dizain_santehnika.png")
             include ../includes/footer.pug
         include ../includes/scripts.pug
+        script(src="./assets/js/supreme_sausage.js" type="text/javascript")

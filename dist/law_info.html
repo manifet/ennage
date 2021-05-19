@@ -19,58 +19,64 @@
 </div>
     <div class="wrapper">
 <header class="header">
-  <div class="header__container container"><a class="logo" href="./index.html">
-      <svg class="header__icon" width="32" height="28" viewBox="0 0 32 28">
-        <use xlink:href="./assets/images/sprites.svg#logo"></use>
-      </svg></a>
+  <div class="header__container container">
+    <div class="header__up"><a class="header__logo" href="./index.html">
+        <svg class="header__icon">
+          <use xlink:href="./assets/images/sprites.svg#logo"></use>
+        </svg></a><a class="header__current-link"> </a>
+      <div class="hamburger">
+        <div class="hamburger__open">
+          <svg class="header__icon">
+            <use xlink:href="./assets/images/sprites.svg#hamburger"></use>
+          </svg>
+        </div>
+        <div class="hamburger__close">
+          <svg class="header__icon">
+            <use xlink:href="./assets/images/sprites.svg#close"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
     <div class="header__overlay">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__item-link" href="./team.html">О команде</a></li>
-          <li class="nav__item nav__item--static"><a class="nav__item-link" href="./projects.html">Наши проекты</a></li>
-          <li class="nav__item"><a class="nav__item-link" href="./blog.html">Блог</a></li>
-          <li class="nav__item"><a class="nav__item-link" href="./contacts.html">Контакты</a></li>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-link" href="./team.html">О команде</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="./projects.html">Наши проекты</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="./blog.html">Блог</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="./contacts.html">Контакты</a></li>
         </ul>
       </nav>
       <button class="btn btn__blue">Связаться с нами</button>
     </div>
-    <div class="hamburger">
-      <svg class="header__icon hamburger__open" width="40" height="24" viewBox="0 0 40 24">
-        <use xlink:href="./assets/images/sprites.svg#hamburger"></use>
-      </svg>
-      <svg class="header__icon hamburger__close" width="34" height="34" viewBox="0 0 34 34">
-        <use xlink:href="./assets/images/sprites.svg#close"></use>
-      </svg>
-    </div>
   </div>
 </header>
-      <section class="page-head">
-        <div class=" container">
-          <div class="page-head__wrap">
-            <div class="section-head">
-              <div class="section-head__wrap">
-                <div class="section-head__heading">Правовая информация &#127758;</div>
+      <main class="law-info">
+        <section class="page-head">
+          <div class="page-head__container container">
+            <div class="page-head__wrap">
+              <div class="section-head">
+                <div class="section-head__wrap">
+                  <div class="section-head__heading">Правовая информация &#127758;</div>
+                </div>
               </div>
+              <div class="page-head__text">Все наши документы есть тут и с ними можно (и даже нужно) ознакомиться.!</div>
             </div>
-            <div class="page-head__text">Все наши документы есть тут и с ними можно (и даже нужно) ознакомиться.!</div>
+            <div class="law-info__wrap"><a class="law-info__link">Политика конфиденциальности</a></div>
           </div>
-        </div>
-      </section>
-      <div class="law-info">
-        <div class="law-info__container container"><a class="law-info__link">Политика конфиденциальности</a></div>
-      </div>
+        </section>
+      </main>
 <footer class="footer">
-  <div class="footer__container container"><a class="footer__logo logo" href="./index.html">
-      <svg class="footer__icon" width="64" height="55" viewBox="0 0 32 28">
+  <div class="footer__container container"><a class="footer__logo" href="./index.html">
+      <svg class="footer__icon">
         <use xlink:href="./assets/images/sprites.svg#logo"></use>
       </svg></a>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__item-link" href="./index.html">Главная</a></li>
-        <li class="nav__item"><a class="nav__item-link" href="./team.html">О команде</a></li>
-        <li class="nav__item nav__item"><a class="nav__item-link" href="./projects.html">Наши проекты</a></li>
-        <li class="nav__item"><a class="nav__item-link" href="./blog.html">Блог</a></li>
-        <li class="nav__item"><a class="nav__item-link" href="./contacts.html">Контакты</a></li>
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./index.html">Главная</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./team.html">О команде</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./projects.html">Наши проекты</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./blog.html">Блог</a></li>
+        <li class="footer__nav-item"><a class="footer__nav-link" href="./contacts.html">Контакты</a></li>
       </ul>
     </nav>
     <div class="footer__copyright"> <a class="footer__copyright-link" href="./law_info.html">Правовая информация</a></div>

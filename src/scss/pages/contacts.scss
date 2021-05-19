@@ -9,20 +9,38 @@
 /* Contacts
   ========================================================================== */
 .contacts {
-  &__container {
-    margin-bottom: 6.5rem;
+  & .page-head {
+    margin-bottom: rem(104px);
   }
   &__list {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: -2rem;
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0rem;
+    }
+    .page-head__wrap + & {
+      margin-top: rem(136px);
+      @include phones {
+        margin-top: rem(120px);
+      }
+    }
   }
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
     &:not(:last-child) {
       margin-right: 1rem;
+      @include tablets {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
     }
     &-title {
       font-family: "Oswald";
@@ -55,6 +73,26 @@
       margin-right: 1.5rem;
     }
   }
+  &__behavior {
+    width: 2rem;
+    height: rem(21px);
+    display: flex;
+  }
+  &__inst {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+  }
+  &__telegram {
+    width: 2rem;
+    height: rem(28px);
+    display: flex;
+  }
+  &__vk {
+    width: 2rem;
+    height: rem(19px);
+    display: flex;
+  }
   &__icon {
     fill: var(--royalBlue);
   }
@@ -63,6 +101,7 @@
     height: 5rem;
     margin-bottom: 1.5rem;
     background-size: 300%;
+    flex: 0 0 auto;
   }
 }
 
@@ -70,13 +109,16 @@
   ========================================================================== */
 .callback {
   background: var(--graniteGray05);
-  padding: rem(56px) 0 0 0;
+  padding: rem(56px) 0 rem(72px) 0;
+  margin-bottom: 0;
   &__container {
     max-width: rem(384px);
-    margin-bottom: rem(72px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include phones{
+      max-width: none;
+    }
   }
   &__emoji {
     min-width: 5rem;
@@ -93,6 +135,7 @@
     text-transform: uppercase;
     color: var(--graniteGray);
     margin-bottom: 1.875rem;
+    text-align: center;
   }
   &__form {
     display: flex;

@@ -1,7 +1,7 @@
 {
-  "name": "webpack-template",
+  "name": "ennage",
   "version": "1.0.0",
-  "description": "webpack basic template",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --config ./build/webpack.dev.conf.js",

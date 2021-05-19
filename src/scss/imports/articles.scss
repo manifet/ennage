@@ -1,19 +1,15 @@
 /* Articles
   ========================================================================== */
 .articles {
-  &__container{
-    // To insert a container of articles without margin-bottom on the blog.html page
-    margin-bottom: 0rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: -2rem;
+  margin-right: -1rem;
+  @include tablets {
+    margin-right: 0;
   }
-  & .section-head {
-    margin-bottom: 5rem;
-  }
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-right: -1rem;
-  }
+
   &__item {
     max-width: rem(592px);
     height: rem(452px);
@@ -24,16 +20,27 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 2rem;
     margin-right: 1rem;
+    margin-bottom: 2rem;
+    @include tablets {
+      width: 100%;
+      max-width: none;
+      margin-right: 0;
+      height: auto;
+    }
+    @include phones {
+      padding: 2rem;
+    }
     &-wrap {
       display: flex;
       flex-direction: column;
+      width: 100%;
     }
   }
   &__img-text {
     width: 100%;
     height: rem(168px);
+    margin-bottom: 1.5rem;
   }
   &__img {
     width: 100%;
@@ -63,7 +70,7 @@
     line-height: 2rem;
     color: var(--graniteGray);
     margin-bottom: 1.5rem;
-    & + &{
+    & + & {
       margin-left: 1rem;
     }
   }

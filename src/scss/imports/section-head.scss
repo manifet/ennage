@@ -4,10 +4,21 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  @include tablets {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   &__wrap {
     display: flex;
     flex-direction: column;
+    width: max-content;
     max-width: rem(594px);
+    @include tablets {
+      width: 100%;
+      & + .btn-ref {
+        margin-top: 2rem;
+      }
+    }
   }
   &__heading {
     font-family: "Oswald";
@@ -17,24 +28,22 @@
     color: var(--graniteGray);
     line-height: rem(72px);
     text-transform: uppercase;
+    @include phones {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
   }
   &__subheading {
     font-family: "Oswald";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: rem(56px);
     color: var(--graniteGray35);
     line-height: rem(72px);
     text-transform: uppercase;
-  }
-  &__ref-btn {
-    background: white;
-    border: 0.125rem solid var(--graniteGray10);
-    padding: 1rem 1.5rem;
-    color: var(--royalBlue);
-  }
-  &__ref-icon {
-    margin-left: 0.75rem;
-    fill: var(--royalBlue);
+    @include phones {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
   }
 }

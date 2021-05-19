@@ -19,8 +19,12 @@ body {
   font-weight: $mainFontWeight;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  &.fixed {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
 }
-
 *,
 *:before,
 *:after {
@@ -38,6 +42,11 @@ h6 {
 
 a {
   text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
 }
 
 ul,
@@ -64,24 +73,31 @@ li {
 
 // styles of main elements
 .wrapper {
-  display: none;
+  display: flex;
   flex-direction: column;
   margin: 0 auto;
   min-height: 100%;
   min-width: 100%;
+  background: white;
+}
+main {
+  padding-top: 10rem;
+}
+section {
+  margin-bottom: 10rem;
+  @include tablets {
+    margin-bottom: 7rem;
+  }
+  @include tablets {
+    margin-bottom: 5rem;
+  }
 }
 .container {
   width: 95%;
   flex: 0 0 auto;
   position: relative;
   margin: 0 auto;
-  margin-bottom: 10rem;
   max-width: $desktopWidth;
-}
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 %btnStyles {
@@ -138,6 +154,11 @@ li {
     color: var(--royalBlue);
     &__icon {
       fill: var(--royalBlue);
+    }
+    &__arrow {
+      display: flex;
+      width: rem(33px);
+      height: rem(13px);
       & + span,
       span + & {
         margin-left: 0.75rem;

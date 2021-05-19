@@ -7,69 +7,75 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
         link(href="./assets/css/main.css" type="text/css" rel="stylesheet")
         link(href="./assets/css/blog.css" type="text/css" rel="stylesheet")
-    body
+    body(class="fixed")
         include ../includes/preloader.pug
         div(class="wrapper")
             header(class="header")
                 div(class="header__container container")
-                    a(href="./index.html" class="logo")
-                        svg(class="header__icon" width="32" height="28" viewBox="0 0 32 28")
-                            use(xlink:href="./assets/images/sprites.svg#logo")
+                    div(class="header__up")
+                        a(href="./index.html" class="header__logo")
+                            svg(class="header__icon")
+                                use(xlink:href="./assets/images/sprites.svg#logo")
+                        a(class="header__current-link") Блог
+                        div(class="hamburger")
+                            div(class="hamburger__open")
+                                svg(class="header__icon")
+                                    use(xlink:href="./assets/images/sprites.svg#hamburger")
+                            div(class="hamburger__close")
+                                svg(class="header__icon")
+                                    use(xlink:href="./assets/images/sprites.svg#close")
                     div(class="header__overlay")
-                        nav(class="nav")
-                            ul(class="nav__list")
-                                li(class="nav__item")
-                                    a(href="./team.html" class="nav__item-link") О команде
-                                li(class="nav__item nav__item--static")
-                                    a(href="./projects.html" class="nav__item-link") Наши проекты
-                                li(class="nav__item active")
-                                    a(href="./blog.html" class="nav__item-link") Блог
-                                li(class="nav__item")
-                                    a(href="./contacts.html" class="nav__item-link") Контакты
+                        nav(class="header__nav")
+                            ul(class="header__nav-list")
+                                li(class="header__nav-item")
+                                    a(href="./team.html" class="header__nav-link") О команде
+                                li(class="header__nav-item")
+                                    a(href="./projects.html" class="header__nav-link") Наши проекты
+                                li(class="header__nav-item active")
+                                    a(href="./blog.html" class="header__nav-link") Блог
+                                li(class="header__nav-item")
+                                    a(href="./contacts.html" class="header__nav-link") Контакты
                         button(class="btn btn__blue") Связаться с нами
-                    div(class="hamburger")
-                        svg(class="header__icon hamburger__open" width="40" height="24" viewBox="0 0 40 24")
-                            use(xlink:href="./assets/images/sprites.svg#hamburger")
-                        svg(class="header__icon hamburger__close" width="34" height="34" viewBox="0 0 34 34")
-                            use(xlink:href="./assets/images/sprites.svg#close")
-            section(class="page-head")
-                div(class=" container")
-                    div(class="page-head__wrap")
-                        div(class="section-head")
-                            div(class="section-head__wrap")
-                                div(class="section-head__heading") БЛОГ &#127764;
-                                div(class="section-head__subheading") обо всем сразу
-                        div(class="page-head__text") Рассказываем обо всем, что происходит в команде: рассказываем про то, как продвигается проект, чем занимаемся в свободное время и всякие такие интересные новости.
-            section(class="articles")
-                div(class="articles__container container")
-                    ul(class="articles__list")
-                        li(class="articles__item")
-                            div(class="articles__item-wrap")
-                                div(class="articles__img-wrap")
-                                    img(class="articles__img" src="./assets/images/articles/article_1.jpg")
-                                span(class="articles__title") Как мы работаем
-                                div(class="articles__text") Если вы здесь, то наверняка знаете, что мы делаем. А делаем мы крутые проекты и рассказываем о них.  И в этой статье мы расскажем как мы работаем, какие проекты нас инетресуют, как вообще сложилась наша команда и какие у нас ценности.
-                            a(class="articles__ref") Читать статью
-                        li(class="articles__item")
-                            div(class="articles__item-wrap")
-                                div(class="articles__img-wrap")
-                                    img(class="articles__img" src="./assets/images/articles/article_2.jpg")
-                                span(class="articles__title") Бег начинается с...
-                                div(class="articles__text") Иронично, что человек на фотографии с превью бежит неправильно... Ну или он только начал свой забег?  Давайте разбираться вместе с Safe Running! Расскажем как появилась идея приложения, как мы подошли к исследованиям и как движется разработка.
-                            a(href="./run.html" class="articles__ref") Читать статью
-                        li(class="articles__item disable")
-                            div(class="articles__item-wrap")
-                                div(class="articles__img-wrap")
-                                    img(class="articles__img" src="./assets/images/content/unknown_article.jpg")
-                                div(class="articles__img-text")
-                                    img(class="articles__img" src="./assets/images/content/unknown_text.png")
-                            a(class="articles__ref") Читать статью
-                        li(class="articles__item disable")
-                            div(class="articles__item-wrap")
-                                div(class="articles__img-wrap")
-                                    img(class="articles__img" src="./assets/images/content/unknown_article.jpg")
-                                div(class="articles__img-text")
-                                    img(class="articles__img" src="./assets/images/content/unknown_text.png")
-                            a(class="articles__ref") Читать статью
+            main(class="blog")
+                section(class="page-head")
+                    div(class="page-head__container container")
+                        div(class="page-head__wrap")
+                            div(class="section-head")
+                                div(class="section-head__wrap")
+                                    div(class="section-head__heading") БЛОГ &#127764;
+                                    div(class="section-head__subheading") обо всем сразу
+                            div(class="page-head__text") Рассказываем обо всем, что происходит в команде: рассказываем про то, как продвигается проект, чем занимаемся в свободное время и всякие такие интересные новости.
+                section(class="blog__section")
+                    div(class="blog__container container")
+                        ul(class="articles")
+                            li(class="articles__item")
+                                div(class="articles__item-wrap")
+                                    div(class="articles__img-wrap")
+                                        img(class="articles__img" src="./assets/images/articles/article_1.jpg")
+                                    span(class="articles__title") Как мы работаем
+                                    div(class="articles__text") Если вы здесь, то наверняка знаете, что мы делаем. А делаем мы крутые проекты и рассказываем о них.  И в этой статье мы расскажем как мы работаем, какие проекты нас инетресуют, как вообще сложилась наша команда и какие у нас ценности.
+                                a(class="articles__ref") Читать статью
+                            li(class="articles__item")
+                                div(class="articles__item-wrap")
+                                    div(class="articles__img-wrap")
+                                        img(class="articles__img" src="./assets/images/articles/article_2.jpg")
+                                    span(class="articles__title") Бег начинается с...
+                                    div(class="articles__text") Иронично, что человек на фотографии с превью бежит неправильно... Ну или он только начал свой забег?  Давайте разбираться вместе с Safe Running! Расскажем как появилась идея приложения, как мы подошли к исследованиям и как движется разработка.
+                                a(href="./run.html" class="articles__ref") Читать статью
+                            li(class="articles__item disable")
+                                div(class="articles__item-wrap")
+                                    div(class="articles__img-wrap")
+                                        img(class="articles__img" src="./assets/images/content/unknown_article.jpg")
+                                    div(class="articles__img-text")
+                                        img(class="articles__img" src="./assets/images/content/unknown_text.png")
+                                a(class="articles__ref") Читать статью
+                            li(class="articles__item disable")
+                                div(class="articles__item-wrap")
+                                    div(class="articles__img-wrap")
+                                        img(class="articles__img" src="./assets/images/content/unknown_article.jpg")
+                                    div(class="articles__img-text")
+                                        img(class="articles__img" src="./assets/images/content/unknown_text.png")
+                                a(class="articles__ref") Читать статью
             include ../includes/footer.pug
         include ../includes/scripts.pug
+        script(src="./assets/js/blog.js" type="text/javascript")

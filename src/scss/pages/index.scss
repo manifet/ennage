@@ -9,14 +9,46 @@
 @import "../imports/projects.scss";
 @import "../imports/articles.scss";
 
+/* Main page
+  ========================================================================== */
+.main-page {
+  @include tablets {
+    padding-top: 7rem;
+  }
+  @include phones {
+    padding-top: 5rem;
+  }
+  & .page-head {
+    @include tablets {
+      margin-bottom: rem(112px);
+    }
+    @include phones {
+      margin-bottom: rem(80px);
+    }
+  }
+}
+/* Team life section
+  ========================================================================== */
+.team-life {
+  & .section-head {
+    margin-bottom: 5rem;
+  }
+}
 /* About section
   ========================================================================== */
 .about {
+  margin-bottom: rem(128px);
+  @include tablets {
+    margin-bottom: 5rem;
+  }
+  @include phones {
+    margin-bottom: 3rem;
+  }
   & .section-head {
     margin-bottom: 2rem;
-  }
-  &__container {
-    margin-bottom: rem(128px);
+    @include phones {
+      margin-bottom: 1rem;
+    }
   }
   &__text {
     max-width: rem(594px);
@@ -27,10 +59,19 @@
     line-height: 2rem;
     color: var(--graniteGray);
     opacity: 0.65;
+    & + & {
+      margin-left: 2rem;
+      @include tablets {
+        margin: 2rem 0 0 0;
+      }
+    }
     &-wrap {
       display: flex;
       justify-content: space-between;
       margin-bottom: 2.5rem;
+      @include tablets {
+        flex-direction: column;
+      }
     }
   }
   &__img {

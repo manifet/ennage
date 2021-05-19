@@ -1,23 +1,50 @@
 /* Projects (insert)
   ========================================================================== */
 .projects {
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-right: -1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: -2rem;
+  margin-right: -1rem;
+  margin-left: -1rem;
+  min-width: 100%;
+  @include phones {
+    margin: 0 0 -1rem;
+  }
+  .page-head__wrap + & {
+    margin-top: 10rem;
+    @include tablets {
+      margin-top: rem(112px);
+    }
+    @include phones {
+      margin-top: 4rem;
+    }
   }
   &__item {
-    margin-bottom: 2rem;
     max-width: rem(384px);
     flex: 0 0 auto;
     background: var(--graniteGray);
     height: rem(377px);
     margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    @include tablets {
+      max-width: rem(320px);
+      height: rem(315px);
+      &:last-child {
+        display: none;
+      }
+    }
+    @include phones {
+      margin: 0 0 1rem;
+    }
     &-wrap {
       display: flex;
       flex-direction: column;
-      padding: 2.5rem;
+      padding: 2.5rem 2.5rem rem(22px);
+      @include tablets {
+        padding: 1.5rem 1.5rem 1rem;
+      }
     }
     &-type {
       font-family: "Source Sans Pro";
@@ -29,6 +56,12 @@
       color: white;
       opacity: 0.35;
     }
+  }
+  &__link-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   &__title {
     font-family: "Oswald";
@@ -45,7 +78,7 @@
     object-fit: cover;
     &-wrap {
       width: 100%;
-      height: rem(235px);
+      height: 100%;
     }
   }
 }

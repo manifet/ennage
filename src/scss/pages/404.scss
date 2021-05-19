@@ -5,20 +5,35 @@
   ========================================================================== */
 .notfound {
   flex: 1 1 auto;
-  padding: rem(55.8px) 0 rem(72px);
+  padding: rem(55.8px) 0 3.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 95%;
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
+  @include phones {
+    padding: rem(46px) 0 3rem;
+  }
+  &__logo {
+    width: rem(58px);
+    height: rem(51px);
+    display: flex;
+    @include phones{
+      width: rem(32px);
+      height: rem(28px);
+    }
+  }
   &__up {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-bottom: 1rem;
+    @include phones {
+      margin-bottom: rem(54px);
+    }
   }
   &__text {
     font-family: "Oswald";
@@ -30,6 +45,11 @@
     text-transform: uppercase;
     color: var(--graniteGray);
     margin-bottom: 1rem;
+    @include phones {
+      font-size: 2rem;
+      line-height: 3rem;
+      margin-bottom: 3rem;
+    }
   }
   &__down {
     display: flex;
@@ -45,6 +65,9 @@
       color: var(--graniteGray);
       max-width: rem(318px);
       margin-bottom: 1.5rem;
+      @include phones {
+        margin-bottom: 1rem;
+      }
     }
   }
   &__nav {
@@ -53,12 +76,21 @@
     &-list {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      @include phones {
+        flex-direction: column;
+      }
     }
     &-item {
       border-radius: 0.25rem;
       background: var(--royalBlue10);
+      margin-bottom: 1rem;
       &:not(:last-child) {
         margin-right: 1rem;
+        @include phones {
+          margin: 0 0 0.5rem 0;
+        }
       }
     }
     &-link {

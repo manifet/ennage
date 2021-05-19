@@ -9,10 +9,11 @@
 /* Projects (page)
   ========================================================================== */
 .projects-page {
-  background: var(--graniteGray05);
-  padding-top: 3rem;
-  &__container {
-    margin: 0 auto 3.5rem;
+  &__section {
+    background: var(--graniteGray05);
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+    margin-bottom: 0;
   }
   &__list {
     display: flex;
@@ -29,22 +30,52 @@
     margin-bottom: 1rem;
     height: rem(256px);
     padding: 1.75rem 2.5rem;
+    @include tablets {
+      height: auto;
+      padding: 2rem;
+      align-items: flex-start;
+    }
+    @include phones {
+      padding: 2.5rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__emoji {
-    min-width: 5rem;
-    min-height: 5rem;
+    flex: 0 0 auto;
+    width: 5rem;
+    height: 5rem;
     margin-right: 2.5rem;
     background-size: 300%;
+    @include tablets {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-right: 0;
+    }
+    @include phones {
+      position: relative;
+      margin-bottom: 2rem;
+    }
   }
   &__wrap {
     display: flex;
     align-items: center;
+    position: relative;
+    @include phones {
+      flex-direction: column;
+    }
   }
   &__inner {
     display: flex;
     flex-direction: column;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     max-width: rem(766px);
+    @include phones {
+      margin-right: 0;
+      margin-bottom: 2rem;
+      align-items: center;
+    }
   }
   &__title {
     font-family: "Oswald";
@@ -55,6 +86,16 @@
     text-transform: uppercase;
     color: var(--graniteGray);
     margin-bottom: 0.5rem;
+    @include tablets {
+      padding: 1rem 0;
+      margin-left: rem(104px);
+      margin-bottom: 1.5rem;
+    }
+    @include phones {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
   }
   &__text {
     font-family: "Source Sans Pro";
@@ -63,6 +104,9 @@
     font-size: 1rem;
     line-height: 2rem;
     color: var(--graniteGray65);
+    @include phones {
+      text-align: center;
+    }
   }
   &__img {
     width: 100%;
@@ -74,6 +118,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @include tablets {
+        min-width: rem(122px);
+        width: rem(122px);
+        height: 12.5rem;
+      }
+      @include phones{
+        min-width: auto;
+        width: 100%;
+        height: rem(200px);
+      }
     }
   }
 }

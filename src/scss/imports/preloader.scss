@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   &__wrap {
     width: 95%;
     max-width: 1120px;
@@ -19,6 +19,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    @include phones{
+      margin-bottom: 1.5rem;
+    }
   }
   &__heading {
     font-family: "Oswald";
@@ -28,6 +31,10 @@
     line-height: 4.5rem;
     text-transform: uppercase;
     color: var(--graniteGray);
+    @include phones{
+      font-size: 2rem;
+      line-height: 3rem;
+    }
   }
   &__subheading {
     color: var(--graniteGray65);
@@ -37,6 +44,10 @@
     font-size: 1.5rem;
     line-height: 2rem;
     text-transform: uppercase;
+    @include phones{
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
   }
   &__bar {
     width: 100%;
@@ -53,8 +64,5 @@
   }
   &.loaded {
     display: none;
-    & + .wrapper {
-      display: flex;
-    }
   }
 }

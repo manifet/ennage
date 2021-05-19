@@ -7,86 +7,92 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
         link(href="./assets/css/main.css" type="text/css" rel="stylesheet")
         link(href="./assets/css/team.css" type="text/css" rel="stylesheet")
-    body
+    body(class="fixed")
         include ../includes/preloader.pug
         div(class="wrapper")
             header(class="header")
                 div(class="header__container container")
-                    a(href="./index.html" class="logo")
-                        svg(class="header__icon" width="32" height="28" viewBox="0 0 32 28")
-                            use(xlink:href="./assets/images/sprites.svg#logo")
+                    div(class="header__up")
+                        a(href="./index.html" class="header__logo")
+                            svg(class="header__icon")
+                                use(xlink:href="./assets/images/sprites.svg#logo")
+                        a(class="header__current-link") О команде
+                        div(class="hamburger")
+                            div(class="hamburger__open")
+                                svg(class="header__icon")
+                                    use(xlink:href="./assets/images/sprites.svg#hamburger")
+                            div(class="hamburger__close")
+                                svg(class="header__icon")
+                                    use(xlink:href="./assets/images/sprites.svg#close")
                     div(class="header__overlay")
-                        nav(class="nav")
-                            ul(class="nav__list")
-                                li(class="nav__item active")
-                                    a(href="./team.html" class="nav__item-link") О команде
-                                li(class="nav__item nav__item--static")
-                                    a(href="./projects.html" class="nav__item-link") Наши проекты
-                                li(class="nav__item")
-                                    a(href="./blog.html" class="nav__item-link") Блог
-                                li(class="nav__item")
-                                    a(href="./contacts.html" class="nav__item-link") Контакты
+                        nav(class="header__nav")
+                            ul(class="header__nav-list")
+                                li(class="header__nav-item active")
+                                    a(href="./team.html" class="header__nav-link") О команде
+                                li(class="header__nav-item")
+                                    a(href="./projects.html" class="header__nav-link") Наши проекты
+                                li(class="header__nav-item")
+                                    a(href="./blog.html" class="header__nav-link") Блог
+                                li(class="header__nav-item")
+                                    a(href="./contacts.html" class="header__nav-link") Контакты
                         button(class="btn btn__blue") Связаться с нами
-                    div(class="hamburger")
-                        svg(class="header__icon hamburger__open" width="40" height="24" viewBox="0 0 40 24")
-                            use(xlink:href="./assets/images/sprites.svg#hamburger")
-                        svg(class="header__icon hamburger__close" width="34" height="34" viewBox="0 0 34 34")
-                            use(xlink:href="./assets/images/sprites.svg#close")
-            section(class="page-head")
-                div(class=" container")
-                    div(class="page-head__wrap")
-                        div(class="section-head")
-                            div(class="section-head__wrap")
-                                div(class="section-head__heading") О команде &#127764;
-                                div(class="section-head__subheading") исключительно
-                        div(class="page-head__text") Здесь вы найдете всех участников нашей команды (или даже членов семьи :3). 
-            section(class="team")
-                div(class="team__container container")
-                    ul(class="team__list")
-                        li(class="team__item")
-                            div(class="team__img-wrap")
-                                img(src="./assets/images/team/nesterov.png" class="team__img")
-                            span(class="team__name") Андрей Нестеров
-                            span(class="team__profession") Head of Development
-                        li(class="team__item")
-                            div(class="team__img-wrap")
-                                img(src="./assets/images/team/kotov.png" class="team__img")
-                            span(class="team__name") Сергей котов
-                            span(class="team__profession") Head of Design
-                        li(class="team__item")
-                            div(class="team__img-wrap")
-                                img(src="./assets/images/team/zelenov.png" class="team__img")
-                            span(class="team__name") НИКИТА ЗЕЛЕНОВ
-                            span(class="team__profession") Front-end Developer
-                        li(class="team__item")
-                            div(class="team__img-wrap")
-                                img(src="./assets/images/content/unknown.jpg" class="team__img")
-                            span(class="team__name") Владислав Барченков
-                            span(class="team__profession") Head of Development
-                        li(class="team__item")
-                            div(class="team__img-wrap")
-                                img(src="./assets/images/content/unknown.jpg" class="team__img")
-                            span(class="team__name") Сергей Секов
-                            span(class="team__profession") UX / UI Designer
-                        li(class="team__item")
-                            div(class="team__img-wrap")
-                                img(src="./assets/images/content/unknown.jpg" class="team__img")
-                            span(class="team__name") Сергей Бычков
-                            span(class="team__profession") Back-end Developer
-                        li(class="team__item")
-                            div(class="team__img-wrap")
-                                img(src="./assets/images/content/unknown.jpg" class="team__img")
-                            span(class="team__name") Николай Твердохлеб
-                            span(class="team__profession") Mathematician
-                        li(class="team__item")
-                            div(class="team__img-wrap")
-                                img(src="./assets/images/content/unknown.jpg" class="team__img")
-                            span(class="team__name") Екатерина Кленина
-                            span(class="team__profession") Illustrator
-                        li(class="team__item")
-                            div(class="team__img-wrap")
-                                img(src="./assets/images/content/unknown.jpg" class="team__img")
-                            span(class="team__name") Александр савин
-                            span(class="team__profession") Sound Director
+            main(class="team")
+                section(class="page-head")
+                    div(class="page-head__container container")
+                        div(class="page-head__wrap")
+                            div(class="section-head")
+                                div(class="section-head__wrap")
+                                    div(class="section-head__heading") О команде &#127764;
+                                    div(class="section-head__subheading") исключительно
+                            div(class="page-head__text") Здесь вы найдете всех участников нашей команды (или даже членов семьи :3). 
+                section(class="team__section")
+                    div(class="team__container container")
+                        ul(class="team__list")
+                            li(class="team__item")
+                                div(class="team__img-wrap")
+                                    img(src="./assets/images/team/nesterov.png" class="team__img")
+                                span(class="team__name") Андрей Нестеров
+                                span(class="team__profession") Head of Development
+                            li(class="team__item")
+                                div(class="team__img-wrap")
+                                    img(src="./assets/images/team/kotov.png" class="team__img")
+                                span(class="team__name") Сергей котов
+                                span(class="team__profession") Head of Design
+                            li(class="team__item")
+                                div(class="team__img-wrap")
+                                    img(src="./assets/images/team/zelenov.png" class="team__img")
+                                span(class="team__name") НИКИТА ЗЕЛЕНОВ
+                                span(class="team__profession") Front-end Developer
+                            li(class="team__item")
+                                div(class="team__img-wrap")
+                                    img(src="./assets/images/content/unknown.jpg" class="team__img")
+                                span(class="team__name") Владислав Барченков
+                                span(class="team__profession") Head of Development
+                            li(class="team__item")
+                                div(class="team__img-wrap")
+                                    img(src="./assets/images/content/unknown.jpg" class="team__img")
+                                span(class="team__name") Сергей Секов
+                                span(class="team__profession") UX / UI Designer
+                            li(class="team__item")
+                                div(class="team__img-wrap")
+                                    img(src="./assets/images/content/unknown.jpg" class="team__img")
+                                span(class="team__name") Сергей Бычков
+                                span(class="team__profession") Back-end Developer
+                            li(class="team__item")
+                                div(class="team__img-wrap")
+                                    img(src="./assets/images/content/unknown.jpg" class="team__img")
+                                span(class="team__name") Николай Твердохлеб
+                                span(class="team__profession") Mathematician
+                            li(class="team__item")
+                                div(class="team__img-wrap")
+                                    img(src="./assets/images/content/unknown.jpg" class="team__img")
+                                span(class="team__name") Екатерина Кленина
+                                span(class="team__profession") Illustrator
+                            li(class="team__item")
+                                div(class="team__img-wrap")
+                                    img(src="./assets/images/content/unknown.jpg" class="team__img")
+                                span(class="team__name") Александр савин
+                                span(class="team__profession") Sound Director
             include ../includes/footer.pug
         include ../includes/scripts.pug
+        script(src="./assets/js/team.js" type="text/javascript")

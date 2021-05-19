@@ -231,6 +231,13 @@ th {
 
 @font-face {
   font-family: "Oswald";
+  src: url(../fonts/oswald-light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
   src: url(../fonts/oswaldregular.ttf);
   font-weight: normal;
   font-style: normal;
@@ -461,6 +468,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body.fixed {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
 *,
 *:before,
 *:after {
@@ -513,6 +526,14 @@ li {
   min-width: 100%;
 }
 
+main {
+  padding-top: 10rem;
+}
+
+section {
+  margin-bottom: 10rem;
+}
+
 .container {
   width: 95%;
   -webkit-box-flex: 0;
@@ -520,20 +541,7 @@ li {
           flex: 0 0 auto;
   position: relative;
   margin: 0 auto;
-  margin-bottom: 10rem;
   max-width: 1216px;
-}
-
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .btn, .btn-large, .btn-ref {
@@ -610,8 +618,16 @@ li {
   fill: var(--royalBlue);
 }
 
-.btn-ref__icon + span,
-span + .btn-ref__icon {
+.btn-ref__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 2.0625rem;
+  height: 0.8125rem;
+}
+
+.btn-ref__arrow + span,
+span + .btn-ref__arrow {
   margin-left: 0.75rem;
 }
 
@@ -710,5 +726,28 @@ span + .btn-ref__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    margin-bottom: 7rem;
+  }
+  section {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .preloader__title {
+    margin-bottom: 1.5rem;
+  }
+  .preloader__heading {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .preloader__subheading {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 

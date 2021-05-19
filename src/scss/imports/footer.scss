@@ -8,21 +8,60 @@
     align-items: center;
     padding: 2.75rem 10.9375rem 2rem;
     margin-bottom: 0;
+    @include tablets {
+      padding: 2rem 3rem;
+    }
+    @include phones{
+      padding: 2rem rem(23px);
+    }
   }
   &__icon {
     fill: white;
   }
   &__logo {
     margin-bottom: 3.3125rem;
+    width: 4rem;
+    height: rem(55px);
+    display: flex;
+    @include phones {
+      width: rem(45px);
+      height: rem(39px);
+      margin-bottom: rem(49px);
+    }
   }
-  & .nav__item {
-    margin-left: 1.5rem;
-    &:first-child {
-      margin-left: 0;
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2.5rem;
+    &-list {
+      display: flex;
+      align-items: center;
+      @include phones{
+        flex-direction: column;
+      }
+    }
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+        @include phones{
+          margin: 0 0 1.5rem;
+        }
+      }
     }
     &-link {
       color: white;
       opacity: 0.65;
+      font-family: "Source Sans Pro";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1rem;
+      line-height: 1.5rem;
     }
   }
   &__copyright {
@@ -33,7 +72,7 @@
     padding: 1rem 0;
     border-top: 0.0625rem solid var(--graniteGray75);
     border-bottom: 0.0625rem solid var(--graniteGray75);
-    margin: 2.5rem 0;
+    margin-bottom: 2.5rem;
     &-link {
       color: white;
       opacity: 0.65;

@@ -7,19 +7,20 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
         link(href="./assets/css/main.css" type="text/css" rel="stylesheet")
         link(href="./assets/css/law_info.css" type="text/css" rel="stylesheet")
-    body
+    body(class="fixed")
         include ../includes/preloader.pug
         div(class="wrapper")
             include ../includes/header.pug
-            section(class="page-head")
-                div(class=" container")
-                    div(class="page-head__wrap")
-                        div(class="section-head")
-                            div(class="section-head__wrap")
-                                div(class="section-head__heading") Правовая информация &#127758;
-                        div(class="page-head__text") Все наши документы есть тут и с ними можно (и даже нужно) ознакомиться.!
-            div(class="law-info")
-                div(class="law-info__container container")
-                    a(class="law-info__link") Политика конфиденциальности
+            main(class="law-info")
+                section(class="page-head")
+                    div(class="page-head__container container")
+                        div(class="page-head__wrap")
+                            div(class="section-head")
+                                div(class="section-head__wrap")
+                                    div(class="section-head__heading") Правовая информация &#127758;
+                            div(class="page-head__text") Все наши документы есть тут и с ними можно (и даже нужно) ознакомиться.!
+                        div(class="law-info__wrap")
+                                a(class="law-info__link") Политика конфиденциальности
             include ../includes/footer.pug
         include ../includes/scripts.pug
+        script(src="./assets/js/law_info.js" type="text/javascript")

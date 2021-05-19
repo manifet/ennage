@@ -9,16 +9,19 @@
 /* Team
   ========================================================================== */
 .team {
-  background: var(--graniteGray05);
-  padding-top: 2rem;
-  &__container {
+  &__section {
+    background: var(--graniteGray05);
+    padding-top: 2rem;
     margin-bottom: 0;
   }
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: -2rem;
+    margin: 0 -1rem;
+    @include phones{
+      margin: 0;
+    }
   }
   &__item {
     max-width: rem(384px);
@@ -29,8 +32,14 @@
     flex-direction: column;
     align-items: center;
     background: white;
-    margin-bottom: 2rem;
-    margin-right: 2rem;
+    margin: 0 1rem 2rem;
+    @include tablets {
+      max-width: rem(320px);
+      padding: 1rem 2rem;
+    }
+    @include phones{
+      margin: 0 0 2rem 0;
+    }
   }
   &__img {
     width: 100%;
@@ -51,6 +60,7 @@
     text-transform: uppercase;
     color: var(--graniteGray);
     margin-bottom: 0.5rem;
+    text-align: center;
   }
   &__profession {
     font-family: "Source Sans Pro";
@@ -59,5 +69,6 @@
     font-size: 1rem;
     line-height: 2rem;
     color: var(--graniteGray65);
+    text-align: center;
   }
 }

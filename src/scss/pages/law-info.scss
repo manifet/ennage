@@ -9,11 +9,19 @@
 /* law information
   ========================================================================== */
 .law-info {
-  width: 100%;
-  &__container {
+  & .page-head {
     margin-bottom: 4rem;
+  }
+  &__wrap {
     padding: 1rem;
     background: var(--graniteGray05);
+    width: 100%;
+    .page-head__wrap + & {
+      margin-top: 6rem;
+      @include phones{
+        margin-top: 5rem;
+      }
+    }
   }
   &__link {
     font-family: "Source Sans Pro";
