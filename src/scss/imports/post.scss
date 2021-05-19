@@ -138,6 +138,9 @@
     border-radius: 0.5rem;
     padding: 1.5rem rem(96px);
     margin-top: rem(80px);
+    @include phones{
+      padding: 1.5rem;
+    }
     &-text {
       font-family: "Source Sans Pro";
       font-style: normal;
