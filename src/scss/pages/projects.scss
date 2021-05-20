@@ -23,8 +23,6 @@
   &__item {
     display: flex;
     background: white;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
@@ -33,10 +31,21 @@
     @include tablets {
       height: auto;
       padding: 2rem;
-      align-items: flex-start;
     }
     @include phones {
       padding: 2.5rem 1rem;
+    }
+  }
+  &__link-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    @include tablets {
+      align-items: flex-start;
+    }
+    @include phones {
       flex-direction: column;
       align-items: center;
     }

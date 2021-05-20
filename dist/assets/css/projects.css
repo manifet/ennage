@@ -139,6 +139,9 @@
   font-weight: bold;
   font-size: 0.875rem;
   line-height: 1.5rem;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .header__nav-link:hover {
@@ -440,6 +443,17 @@
   display: -ms-flexbox;
   display: flex;
   background: white;
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  height: 16rem;
+  padding: 1.75rem 2.5rem;
+}
+
+.projects-page__link-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -447,10 +461,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-  height: 16rem;
-  padding: 1.75rem 2.5rem;
+  height: 100%;
 }
 
 .projects-page__emoji {
@@ -620,6 +631,8 @@
   .projects-page__item {
     height: auto;
     padding: 2rem;
+  }
+  .projects-page__link-wrap {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -710,6 +723,8 @@
   }
   .projects-page__item {
     padding: 2.5rem 1rem;
+  }
+  .projects-page__link-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

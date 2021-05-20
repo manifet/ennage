@@ -173,6 +173,7 @@
     color: var(--graniteGray);
     appearance: none;
     outline: none;
+    transition: 0.3s;
   }
   &__input {
     // if input valid check default styles of input

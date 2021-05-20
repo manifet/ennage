@@ -139,6 +139,9 @@
   font-weight: bold;
   font-size: 0.875rem;
   line-height: 1.5rem;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .header__nav-link:hover {
@@ -631,6 +634,9 @@
      -moz-appearance: none;
           appearance: none;
   outline: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .callback__input[data-validate="false"] {
