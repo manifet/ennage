@@ -126,7 +126,7 @@ module.exports = {
       page =>
         new HtmlWebpackPlugin({
           minify: false,
-          template: `${PAGES_DIR}${page}`, // still in the png extension
+          template: `${PAGES_DIR}${page}`, // still in the pug extension
           filename: `./${page.replace(/\.pug/, ".html")}`, // .html
           inject: false
         })

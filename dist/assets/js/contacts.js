@@ -1,7 +1,7 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 235:
+/***/ 599:
 /***/ (function() {
 
 var header = document.querySelector(".header");
@@ -20,7 +20,7 @@ window.addEventListener("scroll", function () {
 
 /***/ }),
 
-/***/ 368:
+/***/ 235:
 /***/ (function() {
 
 var header = document.querySelector('.header');
@@ -72,10 +72,10 @@ hamburgerClose.addEventListener('click', function (e) {
 !function() {
 "use strict";
 
-// EXTERNAL MODULE: ./src/js/main/header.hamburger.js
-var header_hamburger = __webpack_require__(368);
-// EXTERNAL MODULE: ./src/js/main/header.fixed.js
-var header_fixed = __webpack_require__(235);
+// EXTERNAL MODULE: ./src/js/pages/header.hamburger.js
+var header_hamburger = __webpack_require__(235);
+// EXTERNAL MODULE: ./src/js/pages/header.fixed.js
+var header_fixed = __webpack_require__(599);
 ;// CONCATENATED MODULE: ./src/js/utils.js
 function validateForm(fields) {
   var valid = true;
