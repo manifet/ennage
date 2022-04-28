@@ -51,8 +51,9 @@ hamburgerClose.addEventListener('click', function (e) {
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
-/******/ 		if(__webpack_module_cache__[moduleId]) {
-/******/ 			return __webpack_module_cache__[moduleId].exports;
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
@@ -99,6 +100,8 @@ hamburgerClose.addEventListener('click', function (e) {
 /******/ 	}();
 /******/ 	
 /************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 !function() {
 "use strict";
 /* harmony import */ var SCRIPTS_DIR_pages_header_hamburger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(235);
