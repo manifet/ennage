@@ -1,41 +1,42 @@
 # Ennage
 
-Website of the digital project development team
+Ennage is a project that builds an it-solutions team website using HTML, CSS and JavaScript technologies.
+### Preview
+You can see the finished project [here](https://manifet.github.io/ennage/)
+
+![Screenshot of website](https://user-images.githubusercontent.com/61707913/215114938-e201e773-0e3f-493f-9395-6f703174b374.png)
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running (assumes node.js and npm already installed).
 
-Сlone repository from github
+### Сlone repository from github
 
 ```
 git clone https://github.com/manifet/ennage.git
-cd ennage
+cd alearn
 ```
 
-Install dependencies
+### Install dependencies
 
 ```
 npm install
 ```
-
-
-## Deployment
-
-Dev and build differ in the presence of a development server and sourcesmaps
-
+### Start the development process or make the final build 
 ```
 npm run dev
 ```
 ```
 npm run build
 ```
-Deploy for deployment on Github Pages
+
+## Deployment
+
+Deploy to Github Pages. Uses the npm plugin `gh-pages`
 
 ```
 npm run deploy
